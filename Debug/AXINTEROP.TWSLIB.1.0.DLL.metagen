@@ -1,0 +1,1337 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly AxInterop.TWSLib.1.0, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Interop.TWSLib.1.0, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class AxTWSLib.AxTws: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.AxHost
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String account 'get set' : 
+    System.String tif 'get set' : 
+    System.String oca 'get set' : 
+    System.String orderRef 'get set' : 
+    Int32 origin 'get set' : 
+    Int32 transmit 'get set' : 
+    System.String openClose 'get set' : 
+    Int32 parentId 'get set' : 
+    Int32 blockOrder 'get set' : 
+    Int32 sweepToFill 'get set' : 
+    Int32 displaySize 'get set' : 
+    Int32 triggerMethod 'get set' : 
+    Int32 outsideRth 'get set' : 
+    Int32 hidden 'get set' : 
+    Int32 clientIdFilter 'get set' : 
+    System.String acctCodeFilter 'get set' : 
+    System.String timeFilter 'get set' : 
+    System.String symbolFilter 'get set' : 
+    System.String secTypeFilter 'get set' : 
+    System.String exchangeFilter 'get set' : 
+    System.String sideFilter 'get set' : 
+    Double discretionaryAmt 'get set' : 
+    Int32 shortSaleSlot 'get set' : 
+    System.String designatedLocation 'get set' : 
+    Int32 ocaType 'get set' : 
+    Int32 exemptCode 'get set' : 
+    System.String rule80A 'get set' : 
+    System.String settlingFirm 'get set' : 
+    Int32 allOrNone 'get set' : 
+    Int32 minQty 'get set' : 
+    Double percentOffset 'get set' : 
+    Int32 eTradeOnly 'get set' : 
+    Int32 firmQuoteOnly 'get set' : 
+    Double nbboPriceCap 'get set' : 
+    Int32 auctionStrategy 'get set' : 
+    Double startingPrice 'get set' : 
+    Double stockRefPrice 'get set' : 
+    Double delta 'get set' : 
+    Double stockRangeLower 'get set' : 
+    Double stockRangeUpper 'get set' : 
+    System.String TwsConnectionTime 'get set' : 
+    Int32 serverVersion 'get set' : 
+    Int32 overridePercentageConstraints 'get set' : 
+    Double volatility 'get set' : 
+    Int32 volatilityType 'get set' : 
+    System.String deltaNeutralOrderType 'get set' : 
+    Double deltaNeutralAuxPrice 'get set' : 
+    Int32 continuousUpdate 'get set' : 
+    Int32 referencePriceType 'get set' : 
+    Double trailStopPrice 'get set' : 
+    Int32 scaleInitLevelSize 'get set' : 
+    Int32 scaleSubsLevelSize 'get set' : 
+    Double scalePriceIncrement 'get set' : 
+  Events:
+    AxTWSLib._DTwsEvents_tickPriceEventHandler tickPrice: 
+    AxTWSLib._DTwsEvents_tickSizeEventHandler tickSize: 
+    System.EventHandler connectionClosed: 
+    AxTWSLib._DTwsEvents_openOrder1EventHandler openOrder1: 
+    AxTWSLib._DTwsEvents_openOrder2EventHandler openOrder2: 
+    AxTWSLib._DTwsEvents_updateAccountTimeEventHandler updateAccountTime: 
+    AxTWSLib._DTwsEvents_updateAccountValueEventHandler updateAccountValue: 
+    AxTWSLib._DTwsEvents_nextValidIdEventHandler nextValidId: 
+    AxTWSLib._DTwsEvents_permIdEventHandler permId: 
+    AxTWSLib._DTwsEvents_errMsgEventHandler errMsg: 
+    AxTWSLib._DTwsEvents_updatePortfolioEventHandler updatePortfolio: 
+    AxTWSLib._DTwsEvents_orderStatusEventHandler orderStatus: 
+    AxTWSLib._DTwsEvents_contractDetailsEventHandler contractDetails: 
+    AxTWSLib._DTwsEvents_execDetailsEventHandler execDetails: 
+    AxTWSLib._DTwsEvents_updateMktDepthEventHandler updateMktDepth: 
+    AxTWSLib._DTwsEvents_updateMktDepthL2EventHandler updateMktDepthL2: 
+    AxTWSLib._DTwsEvents_updateNewsBulletinEventHandler updateNewsBulletin: 
+    AxTWSLib._DTwsEvents_managedAccountsEventHandler managedAccounts: 
+    AxTWSLib._DTwsEvents_openOrder3EventHandler openOrder3: 
+    AxTWSLib._DTwsEvents_receiveFAEventHandler receiveFA: 
+    AxTWSLib._DTwsEvents_historicalDataEventHandler historicalData: 
+    AxTWSLib._DTwsEvents_openOrder4EventHandler openOrder4: 
+    AxTWSLib._DTwsEvents_bondContractDetailsEventHandler bondContractDetails: 
+    AxTWSLib._DTwsEvents_scannerParametersEventHandler scannerParameters: 
+    AxTWSLib._DTwsEvents_scannerDataEventHandler scannerData: 
+    AxTWSLib._DTwsEvents_tickOptionComputationEventHandler tickOptionComputation: 
+    AxTWSLib._DTwsEvents_tickGenericEventHandler tickGeneric: 
+    AxTWSLib._DTwsEvents_tickStringEventHandler tickString: 
+    AxTWSLib._DTwsEvents_tickEFPEventHandler tickEFP: 
+    AxTWSLib._DTwsEvents_realtimeBarEventHandler realtimeBar: 
+    AxTWSLib._DTwsEvents_currentTimeEventHandler currentTime: 
+    AxTWSLib._DTwsEvents_scannerDataEndEventHandler scannerDataEnd: 
+    AxTWSLib._DTwsEvents_fundamentalDataEventHandler fundamentalData: 
+    AxTWSLib._DTwsEvents_contractDetailsEndEventHandler contractDetailsEnd: 
+    System.EventHandler openOrderEnd: 
+    AxTWSLib._DTwsEvents_accountDownloadEndEventHandler accountDownloadEnd: 
+    AxTWSLib._DTwsEvents_execDetailsEndEventHandler execDetailsEnd: 
+    AxTWSLib._DTwsEvents_deltaNeutralValidationEventHandler deltaNeutralValidation: 
+    AxTWSLib._DTwsEvents_tickSnapshotEndEventHandler tickSnapshotEnd: 
+    AxTWSLib._DTwsEvents_marketDataTypeEventHandler marketDataType: 
+    AxTWSLib._DTwsEvents_contractDetailsExEventHandler contractDetailsEx: 
+    AxTWSLib._DTwsEvents_openOrderExEventHandler openOrderEx: 
+    AxTWSLib._DTwsEvents_execDetailsExEventHandler execDetailsEx: 
+    AxTWSLib._DTwsEvents_updatePortfolioExEventHandler updatePortfolioEx: 
+    AxTWSLib._DTwsEvents_scannerDataExEventHandler scannerDataEx: 
+    AxTWSLib._DTwsEvents_commissionReportEventHandler commissionReport: 
+    AxTWSLib._DTwsEvents_positionEventHandler position: 
+    System.EventHandler positionEnd: 
+    AxTWSLib._DTwsEvents_accountSummaryEventHandler accountSummary: 
+    AxTWSLib._DTwsEvents_accountSummaryEndEventHandler accountSummaryEnd: 
+    AxTWSLib._DTwsEvents_verifyMessageAPIEventHandler verifyMessageAPI: 
+    AxTWSLib._DTwsEvents_verifyCompletedEventHandler verifyCompleted: 
+    AxTWSLib._DTwsEvents_displayGroupListEventHandler displayGroupList: 
+    AxTWSLib._DTwsEvents_displayGroupUpdatedEventHandler displayGroupUpdated: 
+  Methods:
+    add_accountSummaryEnd(_DTwsEvents_accountSummaryEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_accountSummaryEnd(_DTwsEvents_accountSummaryEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_verifyMessageAPI(_DTwsEvents_verifyMessageAPIEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_verifyMessageAPI(_DTwsEvents_verifyMessageAPIEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_verifyCompleted(_DTwsEvents_verifyCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_verifyCompleted(_DTwsEvents_verifyCompletedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_displayGroupList(_DTwsEvents_displayGroupListEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_displayGroupList(_DTwsEvents_displayGroupListEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_displayGroupUpdated(_DTwsEvents_displayGroupUpdatedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_displayGroupUpdated(_DTwsEvents_displayGroupUpdatedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    updateDisplayGroup(Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    unsubscribeFromGroupEvents(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createContract(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createComboLegList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createOrder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createExecutionFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createScannerSubscription(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createUnderComp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createTagValueList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createOrderComboLegList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelMktData(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelOrder(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    placeOrder(Int32, String, Int32, String, String, String, Double, String, String, String, String, String, String, Double, Double, String, String, String, String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    disconnect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    connect(String, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    connect(String, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktData(Int32, String, String, String, Double, String, String, String, String, String, String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqOpenOrders(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqAccountUpdates(Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqExecutions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqIds(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktData2(Int32, String, String, String, String, String, String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    placeOrder2(Int32, String, Int32, String, String, String, String, String, String, Double, Double, String, String, String, String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqContractDetails(String, String, String, Double, String, String, String, String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqContractDetails2(String, String, String, String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktDepth(Int32, String, String, String, Double, String, String, String, String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktDepth2(Int32, String, String, String, String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelMktDepth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    addComboLeg(Int32, String, Int32, String, Int32, Int32, String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    clearComboLegs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelNewsBulletins(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqNewsBulletins(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setServerLogLevel(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqAutoOpenOrders(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqAllOpenOrders(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqManagedAccts(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    requestFA(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    replaceFA(Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqHistoricalData(Int32, String, String, String, Double, String, String, String, String, Int32, String, String, String, String, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    exerciseOptions(Int32, String, String, String, Double, String, String, String, String, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqScannerParameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqScannerSubscription(Int32, Int32, String, String, String, Double, Double, Int32, Double, Double, String, String, String, String, String, String, Double, Double, Int32, Int32, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelHistoricalData(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelScannerSubscription(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    resetAllProperties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqRealTimeBars(Int32, String, String, String, Double, String, String, String, String, String, Int32, Int32, String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelRealTimeBars(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqCurrentTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqFundamentalData(Int32, IContract, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelFundamentalData(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    calculateImpliedVolatility(Int32, IContract, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    calculateOptionPrice(Int32, IContract, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelCalculateImpliedVolatility(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelCalculateOptionPrice(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqGlobalCancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMarketDataType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqContractDetailsEx(Int32, IContract): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktDataEx(Int32, IContract, String, Int32, ITagValueList): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktDepthEx(Int32, IContract, Int32, ITagValueList): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    placeOrderEx(Int32, IContract, IOrder): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqExecutionsEx(Int32, IExecutionFilter): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    exerciseOptionsEx(Int32, IContract, Int32, Int32, String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqHistoricalDataEx(Int32, IContract, String, String, String, String, Int32, Int32, ITagValueList): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqRealTimeBarsEx(Int32, IContract, Int32, String, Int32, ITagValueList): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqScannerSubscriptionEx(Int32, IScannerSubscription, ITagValueList): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    addOrderComboLeg(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    clearOrderComboLegs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqPositions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelPositions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqAccountSummary(Int32, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelAccountSummary(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    verifyRequest(String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    verifyMessage(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    queryDisplayGroups(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    subscribeToGroupEvents(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_updateAccountValue(_DTwsEvents_updateAccountValueEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_nextValidId(_DTwsEvents_nextValidIdEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_nextValidId(_DTwsEvents_nextValidIdEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_permId(_DTwsEvents_permIdEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_permId(_DTwsEvents_permIdEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_errMsg(_DTwsEvents_errMsgEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_errMsg(_DTwsEvents_errMsgEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_updatePortfolio(_DTwsEvents_updatePortfolioEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_updatePortfolio(_DTwsEvents_updatePortfolioEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_orderStatus(_DTwsEvents_orderStatusEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_orderStatus(_DTwsEvents_orderStatusEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_contractDetails(_DTwsEvents_contractDetailsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_contractDetails(_DTwsEvents_contractDetailsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_execDetails(_DTwsEvents_execDetailsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_execDetails(_DTwsEvents_execDetailsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_updateMktDepth(_DTwsEvents_updateMktDepthEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_updateMktDepth(_DTwsEvents_updateMktDepthEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_updateMktDepthL2(_DTwsEvents_updateMktDepthL2EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_updateMktDepthL2(_DTwsEvents_updateMktDepthL2EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_updateNewsBulletin(_DTwsEvents_updateNewsBulletinEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_updateNewsBulletin(_DTwsEvents_updateNewsBulletinEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_managedAccounts(_DTwsEvents_managedAccountsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_managedAccounts(_DTwsEvents_managedAccountsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_openOrder3(_DTwsEvents_openOrder3EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_openOrder3(_DTwsEvents_openOrder3EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_receiveFA(_DTwsEvents_receiveFAEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_receiveFA(_DTwsEvents_receiveFAEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_historicalData(_DTwsEvents_historicalDataEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_historicalData(_DTwsEvents_historicalDataEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_openOrder4(_DTwsEvents_openOrder4EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_openOrder4(_DTwsEvents_openOrder4EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_bondContractDetails(_DTwsEvents_bondContractDetailsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_bondContractDetails(_DTwsEvents_bondContractDetailsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_scannerParameters(_DTwsEvents_scannerParametersEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_scannerParameters(_DTwsEvents_scannerParametersEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_scannerData(_DTwsEvents_scannerDataEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_scannerData(_DTwsEvents_scannerDataEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_tickOptionComputation(_DTwsEvents_tickOptionComputationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_tickOptionComputation(_DTwsEvents_tickOptionComputationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_tickGeneric(_DTwsEvents_tickGenericEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_tickGeneric(_DTwsEvents_tickGenericEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_tickString(_DTwsEvents_tickStringEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_tickString(_DTwsEvents_tickStringEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_tickEFP(_DTwsEvents_tickEFPEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_tickEFP(_DTwsEvents_tickEFPEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_realtimeBar(_DTwsEvents_realtimeBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_realtimeBar(_DTwsEvents_realtimeBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_currentTime(_DTwsEvents_currentTimeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_currentTime(_DTwsEvents_currentTimeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_scannerDataEnd(_DTwsEvents_scannerDataEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_scannerDataEnd(_DTwsEvents_scannerDataEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_fundamentalData(_DTwsEvents_fundamentalDataEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_fundamentalData(_DTwsEvents_fundamentalDataEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_contractDetailsEnd(_DTwsEvents_contractDetailsEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_contractDetailsEnd(_DTwsEvents_contractDetailsEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_openOrderEnd(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_openOrderEnd(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_accountDownloadEnd(_DTwsEvents_accountDownloadEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_accountDownloadEnd(_DTwsEvents_accountDownloadEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_execDetailsEnd(_DTwsEvents_execDetailsEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_execDetailsEnd(_DTwsEvents_execDetailsEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_deltaNeutralValidation(_DTwsEvents_deltaNeutralValidationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_deltaNeutralValidation(_DTwsEvents_deltaNeutralValidationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_tickSnapshotEnd(_DTwsEvents_tickSnapshotEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_tickSnapshotEnd(_DTwsEvents_tickSnapshotEndEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_marketDataType(_DTwsEvents_marketDataTypeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_marketDataType(_DTwsEvents_marketDataTypeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_contractDetailsEx(_DTwsEvents_contractDetailsExEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_contractDetailsEx(_DTwsEvents_contractDetailsExEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_openOrderEx(_DTwsEvents_openOrderExEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_openOrderEx(_DTwsEvents_openOrderExEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_execDetailsEx(_DTwsEvents_execDetailsExEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_execDetailsEx(_DTwsEvents_execDetailsExEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_updatePortfolioEx(_DTwsEvents_updatePortfolioExEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_updatePortfolioEx(_DTwsEvents_updatePortfolioExEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_scannerDataEx(_DTwsEvents_scannerDataExEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_scannerDataEx(_DTwsEvents_scannerDataExEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_commissionReport(_DTwsEvents_commissionReportEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_commissionReport(_DTwsEvents_commissionReportEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_position(_DTwsEvents_positionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_position(_DTwsEvents_positionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_positionEnd(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_positionEnd(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_accountSummary(_DTwsEvents_accountSummaryEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_accountSummary(_DTwsEvents_accountSummaryEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_account(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_account(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_tif(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_tif(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_oca(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_oca(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_orderRef(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_orderRef(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_origin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_origin(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_transmit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_transmit(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_openClose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_openClose(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_parentId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_parentId(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_blockOrder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_blockOrder(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_sweepToFill(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_sweepToFill(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_displaySize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_displaySize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_triggerMethod(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_triggerMethod(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_outsideRth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_outsideRth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_hidden(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_hidden(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_clientIdFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_clientIdFilter(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_acctCodeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_acctCodeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_timeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_timeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_symbolFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_symbolFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_secTypeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_secTypeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_exchangeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_exchangeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_sideFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_sideFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_discretionaryAmt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_discretionaryAmt(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_shortSaleSlot(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_shortSaleSlot(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_designatedLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_designatedLocation(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ocaType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ocaType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_exemptCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_exemptCode(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_rule80A(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_rule80A(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_settlingFirm(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_settlingFirm(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_allOrNone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_allOrNone(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_minQty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_minQty(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_percentOffset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_percentOffset(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_eTradeOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_eTradeOnly(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_firmQuoteOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_firmQuoteOnly(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_nbboPriceCap(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_nbboPriceCap(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_auctionStrategy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_auctionStrategy(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_startingPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_startingPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_stockRefPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_stockRefPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_delta(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_delta(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_stockRangeLower(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_stockRangeLower(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_stockRangeUpper(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_stockRangeUpper(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TwsConnectionTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TwsConnectionTime(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_serverVersion(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_serverVersion(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_overridePercentageConstraints(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_overridePercentageConstraints(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_volatility(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_volatility(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_volatilityType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_volatilityType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_deltaNeutralOrderType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_deltaNeutralOrderType(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_deltaNeutralAuxPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_deltaNeutralAuxPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_continuousUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_continuousUpdate(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_referencePriceType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_referencePriceType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_trailStopPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_trailStopPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_scaleInitLevelSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_scaleInitLevelSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_scaleSubsLevelSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_scaleSubsLevelSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_scalePriceIncrement(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_scalePriceIncrement(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_tickPrice(_DTwsEvents_tickPriceEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_tickPrice(_DTwsEvents_tickPriceEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_tickSize(_DTwsEvents_tickSizeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_tickSize(_DTwsEvents_tickSizeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_connectionClosed(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_connectionClosed(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_openOrder1(_DTwsEvents_openOrder1EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_openOrder1(_DTwsEvents_openOrder1EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_openOrder2(_DTwsEvents_openOrder2EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_openOrder2(_DTwsEvents_openOrder2EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_updateAccountTime(_DTwsEvents_updateAccountTimeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_updateAccountTime(_DTwsEvents_updateAccountTimeEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_updateAccountValue(_DTwsEvents_updateAccountValueEventHandler): PrivateScope, Public, HideBySig, SpecialName
+Class AxTWSLib._DTwsEvents_tickPriceEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_tickPriceEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_tickPriceEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_tickPriceEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    Int32 tickType : Public
+    Double price : Public
+    Int32 canAutoExecute : Public
+Class AxTWSLib._DTwsEvents_tickSizeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_tickSizeEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_tickSizeEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_tickSizeEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    Int32 tickType : Public
+    Int32 size : Public
+Class AxTWSLib._DTwsEvents_openOrder1EventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_openOrder1Event): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_openOrder1Event, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_openOrder1Event: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, System.String, System.String, Double, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    System.String symbol : Public
+    System.String secType : Public
+    System.String expiry : Public
+    Double strike : Public
+    System.String right : Public
+    System.String exchange : Public
+    System.String curency : Public
+    System.String localSymbol : Public
+Class AxTWSLib._DTwsEvents_openOrder2EventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_openOrder2Event): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_openOrder2Event, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_openOrder2Event: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, Int32, System.String, Double, Double, System.String, System.String, System.String, System.String, Int32, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    System.String action : Public
+    Int32 quantity : Public
+    System.String orderType : Public
+    Double lmtPrice : Public
+    Double auxPrice : Public
+    System.String tif : Public
+    System.String ocaGroup : Public
+    System.String account : Public
+    System.String openClose : Public
+    Int32 origin : Public
+    System.String orderRef : Public
+    Int32 clientId : Public
+Class AxTWSLib._DTwsEvents_updateAccountTimeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_updateAccountTimeEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_updateAccountTimeEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_updateAccountTimeEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String timeStamp : Public
+Class AxTWSLib._DTwsEvents_updateAccountValueEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_updateAccountValueEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_updateAccountValueEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_updateAccountValueEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String key : Public
+    System.String value : Public
+    System.String curency : Public
+    System.String accountName : Public
+Class AxTWSLib._DTwsEvents_nextValidIdEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_nextValidIdEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_nextValidIdEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_nextValidIdEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+Class AxTWSLib._DTwsEvents_permIdEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_permIdEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_permIdEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_permIdEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    Int32 permId : Public
+Class AxTWSLib._DTwsEvents_errMsgEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_errMsgEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_errMsgEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_errMsgEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    Int32 errorCode : Public
+    System.String errorMsg : Public
+Class AxTWSLib._DTwsEvents_updatePortfolioEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_updatePortfolioEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_updatePortfolioEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_updatePortfolioEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.String, Double, System.String, System.String, System.String, Int32, Double, Double, Double, Double, Double, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String symbol : Public
+    System.String secType : Public
+    System.String expiry : Public
+    Double strike : Public
+    System.String right : Public
+    System.String curency : Public
+    System.String localSymbol : Public
+    Int32 position : Public
+    Double marketPrice : Public
+    Double marketValue : Public
+    Double averageCost : Public
+    Double unrealizedPNL : Public
+    Double realizedPNL : Public
+    System.String accountName : Public
+Class AxTWSLib._DTwsEvents_orderStatusEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_orderStatusEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_orderStatusEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_orderStatusEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, Int32, Int32, Double, Int32, Int32, Double, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    System.String status : Public
+    Int32 filled : Public
+    Int32 remaining : Public
+    Double avgFillPrice : Public
+    Int32 permId : Public
+    Int32 parentId : Public
+    Double lastFillPrice : Public
+    Int32 clientId : Public
+    System.String whyHeld : Public
+Class AxTWSLib._DTwsEvents_contractDetailsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_contractDetailsEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_contractDetailsEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_contractDetailsEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.String, Double, System.String, System.String, System.String, System.String, System.String, System.String, Int32, Double, Int32, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String symbol : Public
+    System.String secType : Public
+    System.String expiry : Public
+    Double strike : Public
+    System.String right : Public
+    System.String exchange : Public
+    System.String curency : Public
+    System.String localSymbol : Public
+    System.String marketName : Public
+    System.String tradingClass : Public
+    Int32 conId : Public
+    Double minTick : Public
+    Int32 priceMagnifier : Public
+    System.String multiplier : Public
+    System.String orderTypes : Public
+    System.String validExchanges : Public
+Class AxTWSLib._DTwsEvents_execDetailsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_execDetailsEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_execDetailsEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_execDetailsEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, System.String, System.String, Double, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, Int32, Double, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    System.String symbol : Public
+    System.String secType : Public
+    System.String expiry : Public
+    Double strike : Public
+    System.String right : Public
+    System.String cExchange : Public
+    System.String curency : Public
+    System.String localSymbol : Public
+    System.String execId : Public
+    System.String time : Public
+    System.String acctNumber : Public
+    System.String eExchange : Public
+    System.String side : Public
+    Int32 shares : Public
+    Double price : Public
+    Int32 permId : Public
+    Int32 clientId : Public
+    Int32 isLiquidation : Public
+Class AxTWSLib._DTwsEvents_updateMktDepthEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_updateMktDepthEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_updateMktDepthEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_updateMktDepthEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    Int32 position : Public
+    Int32 operation : Public
+    Int32 side : Public
+    Double price : Public
+    Int32 size : Public
+Class AxTWSLib._DTwsEvents_updateMktDepthL2EventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_updateMktDepthL2Event): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_updateMktDepthL2Event, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_updateMktDepthL2Event: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, System.String, Int32, Int32, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    Int32 position : Public
+    System.String marketMaker : Public
+    Int32 operation : Public
+    Int32 side : Public
+    Double price : Public
+    Int32 size : Public
+Class AxTWSLib._DTwsEvents_updateNewsBulletinEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_updateNewsBulletinEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_updateNewsBulletinEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_updateNewsBulletinEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int16, Int16, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int16 msgId : Public
+    Int16 msgType : Public
+    System.String message : Public
+    System.String origExchange : Public
+Class AxTWSLib._DTwsEvents_managedAccountsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_managedAccountsEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_managedAccountsEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_managedAccountsEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String accountsList : Public
+Class AxTWSLib._DTwsEvents_openOrder3EventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_openOrder3Event): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_openOrder3Event, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_openOrder3Event: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, System.String, System.String, Double, System.String, System.String, System.String, System.String, System.String, Int32, System.String, Double, Double, System.String, System.String, System.String, System.String, Int32, System.String, Int32, Int32, System.String, System.String, System.String, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    System.String symbol : Public
+    System.String secType : Public
+    System.String expiry : Public
+    Double strike : Public
+    System.String right : Public
+    System.String exchange : Public
+    System.String curency : Public
+    System.String localSymbol : Public
+    System.String action : Public
+    Int32 quantity : Public
+    System.String orderType : Public
+    Double lmtPrice : Public
+    Double auxPrice : Public
+    System.String tif : Public
+    System.String ocaGroup : Public
+    System.String account : Public
+    System.String openClose : Public
+    Int32 origin : Public
+    System.String orderRef : Public
+    Int32 clientId : Public
+    Int32 permId : Public
+    System.String sharesAllocation : Public
+    System.String faGroup : Public
+    System.String faMethod : Public
+    System.String faPercentage : Public
+    System.String faProfile : Public
+    System.String goodAfterTime : Public
+    System.String goodTillDate : Public
+Class AxTWSLib._DTwsEvents_receiveFAEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_receiveFAEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_receiveFAEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_receiveFAEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 faDataType : Public
+    System.String cxml : Public
+Class AxTWSLib._DTwsEvents_historicalDataEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_historicalDataEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_historicalDataEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_historicalDataEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, Double, Double, Double, Double, Int32, Int32, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    System.String date : Public
+    Double open : Public
+    Double high : Public
+    Double low : Public
+    Double close : Public
+    Int32 volume : Public
+    Int32 barCount : Public
+    Double wAP : Public
+    Int32 hasGaps : Public
+Class AxTWSLib._DTwsEvents_openOrder4EventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_openOrder4Event): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_openOrder4Event, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_openOrder4Event: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, System.String, System.String, Double, System.String, System.String, System.String, System.String, System.String, Int32, System.String, Double, Double, System.String, System.String, System.String, System.String, Int32, System.String, Int32, Int32, System.String, System.String, System.String, System.String, System.String, System.String, System.String, Int32, System.String, System.String, Int32, Int32, Double, Int32, Int32, Double, Int32, Double, Double, Double, Double, Double, Int32, Int32, Int32, Int32, Double, Int32, Int32, Int32, Int32, System.String, Double, Int32, System.String, Double, Int32, Int32, Double, Double, Int32, System.String, Int32, Int32, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    System.String symbol : Public
+    System.String secType : Public
+    System.String expiry : Public
+    Double strike : Public
+    System.String right : Public
+    System.String exchange : Public
+    System.String curency : Public
+    System.String localSymbol : Public
+    System.String action : Public
+    Int32 quantity : Public
+    System.String orderType : Public
+    Double lmtPrice : Public
+    Double auxPrice : Public
+    System.String tif : Public
+    System.String ocaGroup : Public
+    System.String account : Public
+    System.String openClose : Public
+    Int32 origin : Public
+    System.String orderRef : Public
+    Int32 clientId : Public
+    Int32 permId : Public
+    System.String sharesAllocation : Public
+    System.String faGroup : Public
+    System.String faMethod : Public
+    System.String faPercentage : Public
+    System.String faProfile : Public
+    System.String goodAfterTime : Public
+    System.String goodTillDate : Public
+    Int32 ocaType : Public
+    System.String rule80A : Public
+    System.String settlingFirm : Public
+    Int32 allOrNone : Public
+    Int32 minQty : Public
+    Double percentOffset : Public
+    Int32 eTradeOnly : Public
+    Int32 firmQuoteOnly : Public
+    Double nbboPriceCap : Public
+    Int32 auctionStrategy : Public
+    Double startingPrice : Public
+    Double stockRefPrice : Public
+    Double delta : Public
+    Double stockRangeLower : Public
+    Double stockRangeUpper : Public
+    Int32 blockOrder : Public
+    Int32 sweepToFill : Public
+    Int32 ignoreRth : Public
+    Int32 hidden : Public
+    Double discretionaryAmt : Public
+    Int32 displaySize : Public
+    Int32 parentId : Public
+    Int32 triggerMethod : Public
+    Int32 shortSaleSlot : Public
+    System.String designatedLocation : Public
+    Double volatility : Public
+    Int32 volatilityType : Public
+    System.String deltaNeutralOrderType : Public
+    Double deltaNeutralAuxPrice : Public
+    Int32 continuousUpdate : Public
+    Int32 referencePriceType : Public
+    Double trailStopPrice : Public
+    Double basisPoints : Public
+    Int32 basisPointsType : Public
+    System.String legsStr : Public
+    Int32 scaleInitLevelSize : Public
+    Int32 scaleSubsLevelSize : Public
+    Double scalePriceIncrement : Public
+Class AxTWSLib._DTwsEvents_bondContractDetailsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_bondContractDetailsEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_bondContractDetailsEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_bondContractDetailsEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.String, Double, System.String, System.String, System.String, System.String, System.String, Int32, Int32, Int32, System.String, System.String, System.String, System.String, System.String, Int32, Double, System.String, System.String, System.String, System.String, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String symbol : Public
+    System.String secType : Public
+    System.String cusip : Public
+    Double coupon : Public
+    System.String maturity : Public
+    System.String issueDate : Public
+    System.String ratings : Public
+    System.String bondType : Public
+    System.String couponType : Public
+    Int32 convertible : Public
+    Int32 callable : Public
+    Int32 putable : Public
+    System.String descAppend : Public
+    System.String exchange : Public
+    System.String curency : Public
+    System.String marketName : Public
+    System.String tradingClass : Public
+    Int32 conId : Public
+    Double minTick : Public
+    System.String orderTypes : Public
+    System.String validExchanges : Public
+    System.String nextOptionDate : Public
+    System.String nextOptionType : Public
+    Int32 nextOptionPartial : Public
+    System.String notes : Public
+Class AxTWSLib._DTwsEvents_scannerParametersEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_scannerParametersEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_scannerParametersEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_scannerParametersEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String xml : Public
+Class AxTWSLib._DTwsEvents_scannerDataEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_scannerDataEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_scannerDataEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_scannerDataEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, System.String, System.String, System.String, Double, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    Int32 rank : Public
+    System.String symbol : Public
+    System.String secType : Public
+    System.String expiry : Public
+    Double strike : Public
+    System.String right : Public
+    System.String exchange : Public
+    System.String curency : Public
+    System.String localSymbol : Public
+    System.String marketName : Public
+    System.String tradingClass : Public
+    System.String distance : Public
+    System.String benchmark : Public
+    System.String projection : Public
+    System.String legsStr : Public
+Class AxTWSLib._DTwsEvents_tickOptionComputationEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_tickOptionComputationEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_tickOptionComputationEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_tickOptionComputationEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    Int32 tickType : Public
+    Double impliedVol : Public
+    Double delta : Public
+    Double optPrice : Public
+    Double pvDividend : Public
+    Double gamma : Public
+    Double vega : Public
+    Double theta : Public
+    Double undPrice : Public
+Class AxTWSLib._DTwsEvents_tickGenericEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_tickGenericEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_tickGenericEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_tickGenericEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    Int32 tickType : Public
+    Double value : Public
+Class AxTWSLib._DTwsEvents_tickStringEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_tickStringEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_tickStringEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_tickStringEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+    Int32 tickType : Public
+    System.String value : Public
+Class AxTWSLib._DTwsEvents_tickEFPEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_tickEFPEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_tickEFPEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_tickEFPEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Double, System.String, Double, Int32, System.String, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 tickerId : Public
+    Int32 field : Public
+    Double basisPoints : Public
+    System.String formattedBasisPoints : Public
+    Double totalDividends : Public
+    Int32 holdDays : Public
+    System.String futureExpiry : Public
+    Double dividendImpact : Public
+    Double dividendsToExpiry : Public
+Class AxTWSLib._DTwsEvents_realtimeBarEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_realtimeBarEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_realtimeBarEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_realtimeBarEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Double, Double, Double, Double, Int32, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 tickerId : Public
+    Int32 time : Public
+    Double open : Public
+    Double high : Public
+    Double low : Public
+    Double close : Public
+    Int32 volume : Public
+    Double wAP : Public
+    Int32 count : Public
+Class AxTWSLib._DTwsEvents_currentTimeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_currentTimeEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_currentTimeEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_currentTimeEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 time : Public
+Class AxTWSLib._DTwsEvents_scannerDataEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_scannerDataEndEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_scannerDataEndEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_scannerDataEndEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+Class AxTWSLib._DTwsEvents_fundamentalDataEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_fundamentalDataEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_fundamentalDataEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_fundamentalDataEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    System.String data : Public
+Class AxTWSLib._DTwsEvents_contractDetailsEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_contractDetailsEndEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_contractDetailsEndEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_contractDetailsEndEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+Class AxTWSLib._DTwsEvents_accountDownloadEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_accountDownloadEndEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_accountDownloadEndEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_accountDownloadEndEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String accountName : Public
+Class AxTWSLib._DTwsEvents_execDetailsEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_execDetailsEndEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_execDetailsEndEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_execDetailsEndEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+Class AxTWSLib._DTwsEvents_deltaNeutralValidationEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_deltaNeutralValidationEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_deltaNeutralValidationEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_deltaNeutralValidationEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, TWSLib.IUnderComp): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    TWSLib.IUnderComp underComp : Public
+Class AxTWSLib._DTwsEvents_tickSnapshotEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_tickSnapshotEndEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_tickSnapshotEndEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_tickSnapshotEndEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+Class AxTWSLib._DTwsEvents_marketDataTypeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_marketDataTypeEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_marketDataTypeEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_marketDataTypeEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    Int32 marketDataType : Public
+Class AxTWSLib._DTwsEvents_contractDetailsExEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_contractDetailsExEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_contractDetailsExEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_contractDetailsExEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, TWSLib.IContractDetails): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    TWSLib.IContractDetails contractDetails : Public
+Class AxTWSLib._DTwsEvents_openOrderExEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_openOrderExEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_openOrderExEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_openOrderExEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, TWSLib.IContract, TWSLib.IOrder, TWSLib.IOrderState): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 orderId : Public
+    TWSLib.IContract contract : Public
+    TWSLib.IOrder order : Public
+    TWSLib.IOrderState orderState : Public
+Class AxTWSLib._DTwsEvents_execDetailsExEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_execDetailsExEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_execDetailsExEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_execDetailsExEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, TWSLib.IContract, TWSLib.IExecution): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    TWSLib.IContract contract : Public
+    TWSLib.IExecution execution : Public
+Class AxTWSLib._DTwsEvents_updatePortfolioExEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_updatePortfolioExEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_updatePortfolioExEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_updatePortfolioExEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TWSLib.IContract, Int32, Double, Double, Double, Double, Double, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    TWSLib.IContract contract : Public
+    Int32 position : Public
+    Double marketPrice : Public
+    Double marketValue : Public
+    Double averageCost : Public
+    Double unrealizedPNL : Public
+    Double realizedPNL : Public
+    System.String accountName : Public
+Class AxTWSLib._DTwsEvents_scannerDataExEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_scannerDataExEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_scannerDataExEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_scannerDataExEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, TWSLib.IContractDetails, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    Int32 rank : Public
+    TWSLib.IContractDetails contractDetails : Public
+    System.String distance : Public
+    System.String benchmark : Public
+    System.String projection : Public
+    System.String legsStr : Public
+Class AxTWSLib._DTwsEvents_commissionReportEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_commissionReportEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_commissionReportEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_commissionReportEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(TWSLib.ICommissionReport): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    TWSLib.ICommissionReport commissionReport : Public
+Class AxTWSLib._DTwsEvents_positionEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_positionEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_positionEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_positionEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, TWSLib.IContract, Int32, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String account : Public
+    TWSLib.IContract contract : Public
+    Int32 position : Public
+    Double avgCost : Public
+Class AxTWSLib._DTwsEvents_accountSummaryEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_accountSummaryEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_accountSummaryEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_accountSummaryEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    System.String account : Public
+    System.String tag : Public
+    System.String value : Public
+    System.String curency : Public
+Class AxTWSLib._DTwsEvents_accountSummaryEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_accountSummaryEndEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_accountSummaryEndEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_accountSummaryEndEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+Class AxTWSLib._DTwsEvents_verifyMessageAPIEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_verifyMessageAPIEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_verifyMessageAPIEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_verifyMessageAPIEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String apiData : Public
+Class AxTWSLib._DTwsEvents_verifyCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_verifyCompletedEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_verifyCompletedEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_verifyCompletedEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 isSuccessful : Public
+    System.String errorText : Public
+Class AxTWSLib._DTwsEvents_displayGroupListEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_displayGroupListEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_displayGroupListEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_displayGroupListEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    System.String groups : Public
+Class AxTWSLib._DTwsEvents_displayGroupUpdatedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DTwsEvents_displayGroupUpdatedEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DTwsEvents_displayGroupUpdatedEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxTWSLib._DTwsEvents_displayGroupUpdatedEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 reqId : Public
+    System.String contractInfo : Public
+Class AxTWSLib.AxTwsEventMulticaster: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(AxTWSLib.AxTws): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TWSLib._DTwsEvents
+  Methods:
+    tickPrice(Int32, Int32, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    tickSize(Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    connectionClosed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    openOrder1(Int32, String, String, String, Double, String, String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    openOrder2(Int32, String, Int32, String, Double, Double, String, String, String, String, Int32, String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    updateAccountTime(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    updateAccountValue(String, String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    nextValidId(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    permId(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    errMsg(Int32, Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    updatePortfolio(String, String, String, Double, String, String, String, Int32, Double, Double, Double, Double, Double, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    orderStatus(Int32, String, Int32, Int32, Double, Int32, Int32, Double, Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    contractDetails(String, String, String, Double, String, String, String, String, String, String, Int32, Double, Int32, String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    execDetails(Int32, String, String, String, Double, String, String, String, String, String, String, String, String, String, Int32, Double, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    updateMktDepth(Int32, Int32, Int32, Int32, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    updateMktDepthL2(Int32, Int32, String, Int32, Int32, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    updateNewsBulletin(Int16, Int16, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    managedAccounts(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    openOrder3(Int32, String, String, String, Double, String, String, String, String, String, Int32, String, Double, Double, String, String, String, String, Int32, String, Int32, Int32, String, String, String, String, String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    receiveFA(Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    historicalData(Int32, String, Double, Double, Double, Double, Int32, Int32, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    openOrder4(Int32, String, String, String, Double, String, String, String, String, String, Int32, String, Double, Double, String, String, String, String, Int32, String, Int32, Int32, String, String, String, String, String, String, String, Int32, String, String, Int32, Int32, Double, Int32, Int32, Double, Int32, Double, Double, Double, Double, Double, Int32, Int32, Int32, Int32, Double, Int32, Int32, Int32, Int32, String, Double, Int32, String, Double, Int32, Int32, Double, Double, Int32, String, Int32, Int32, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    bondContractDetails(String, String, String, Double, String, String, String, String, String, Int32, Int32, Int32, String, String, String, String, String, Int32, Double, String, String, String, String, Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    scannerParameters(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    scannerData(Int32, Int32, String, String, String, Double, String, String, String, String, String, String, String, String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    tickOptionComputation(Int32, Int32, Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    tickGeneric(Int32, Int32, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    tickString(Int32, Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    tickEFP(Int32, Int32, Double, String, Double, Int32, String, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    realtimeBar(Int32, Int32, Double, Double, Double, Double, Int32, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    currentTime(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    scannerDataEnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    fundamentalData(Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    contractDetailsEnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    openOrderEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    accountDownloadEnd(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    execDetailsEnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    deltaNeutralValidation(Int32, IUnderComp): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    tickSnapshotEnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    marketDataType(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    contractDetailsEx(Int32, IContractDetails): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    openOrderEx(Int32, IContract, IOrder, IOrderState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    execDetailsEx(Int32, IContract, IExecution): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    updatePortfolioEx(IContract, Int32, Double, Double, Double, Double, Double, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    scannerDataEx(Int32, Int32, IContractDetails, String, String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    commissionReport(ICommissionReport): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    position(String, IContract, Int32, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    positionEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    accountSummary(Int32, String, String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    accountSummaryEnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    verifyMessageAPI(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    verifyCompleted(Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    displayGroupList(Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    displayGroupUpdated(Int32, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask

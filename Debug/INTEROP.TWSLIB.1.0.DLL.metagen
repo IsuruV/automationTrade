@@ -1,0 +1,1905 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.TWSLib.1.0, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Interface TWSLib.IComboLeg: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 conId 'get set' : 
+    Int32 ratio 'get set' : 
+    System.String action 'get set' : 
+    System.String exchange 'get set' : 
+    Int32 openClose 'get set' : 
+    Int32 shortSaleSlot 'get set' : 
+    System.String designatedLocation 'get set' : 
+    Int32 exemptCode 'get set' : 
+  Methods:
+    get_conId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_conId(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ratio(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ratio(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_action(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_action(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_exchange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_exchange(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_openClose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_openClose(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_shortSaleSlot(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_shortSaleSlot(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_designatedLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_designatedLocation(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_exemptCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_exemptCode(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.IComboLegList: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    System.Object Item [Int32] 'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Add(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface TWSLib.IUnderComp: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 conId 'get set' : 
+    Double delta 'get set' : 
+    Double price 'get set' : 
+  Methods:
+    get_conId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_conId(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_delta(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_delta(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_price(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_price(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.IContract: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 conId 'get set' : 
+    System.String symbol 'get set' : 
+    System.String secType 'get set' : 
+    System.String expiry 'get set' : 
+    Double strike 'get set' : 
+    System.String right 'get set' : 
+    System.String multiplier 'get set' : 
+    System.String exchange 'get set' : 
+    System.String primaryExchange 'get set' : 
+    System.String currency 'get set' : 
+    System.String localSymbol 'get set' : 
+    System.String tradingClass 'get set' : 
+    Int32 includeExpired 'get set' : 
+    System.Object comboLegs 'get set' : 
+    System.Object underComp 'get set' : 
+    System.String comboLegsDescrip 'get ' : 
+    System.String secIdType 'get set' : 
+    System.String secId 'get set' : 
+  Methods:
+    get_conId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_conId(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_symbol(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_symbol(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_secType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_secType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_expiry(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_expiry(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_strike(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_strike(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_right(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_right(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_multiplier(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_multiplier(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_exchange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_exchange(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_primaryExchange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_primaryExchange(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_currency(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_currency(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_localSymbol(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_localSymbol(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_tradingClass(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_tradingClass(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_includeExpired(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_includeExpired(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_comboLegs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_comboLegs(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_underComp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_underComp(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_comboLegsDescrip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_secIdType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_secIdType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_secId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_secId(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.IContractDetails: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String marketName 'get ' : 
+    Double minTick 'get ' : 
+    Int32 priceMagnifier 'get ' : 
+    System.String orderTypes 'get ' : 
+    System.String validExchanges 'get ' : 
+    Int32 underConId 'get ' : 
+    System.String longName 'get ' : 
+    System.String contractMonth 'get ' : 
+    System.String industry 'get ' : 
+    System.String category 'get ' : 
+    System.String subcategory 'get ' : 
+    System.String timeZoneId 'get ' : 
+    System.String tradingHours 'get ' : 
+    System.String liquidHours 'get ' : 
+    System.Object summary 'get ' : 
+    System.Object secIdList 'get ' : 
+    System.String cusip 'get ' : 
+    System.String ratings 'get ' : 
+    System.String descAppend 'get ' : 
+    System.String bondType 'get ' : 
+    System.String couponType 'get ' : 
+    Int32 callable 'get ' : 
+    Int32 putable 'get ' : 
+    Double coupon 'get ' : 
+    Int32 convertible 'get ' : 
+    System.String maturity 'get ' : 
+    System.String issueDate 'get ' : 
+    System.String nextOptionDate 'get ' : 
+    System.String nextOptionType 'get ' : 
+    Int32 nextOptionPartial 'get ' : 
+    System.String notes 'get ' : 
+    System.String evRule 'get ' : 
+    Double evMultiplier 'get ' : 
+  Methods:
+    get_marketName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_minTick(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_priceMagnifier(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_orderTypes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_validExchanges(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_underConId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_longName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_contractMonth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_industry(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_category(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_subcategory(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_timeZoneId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_tradingHours(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_liquidHours(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_summary(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_secIdList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_cusip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ratings(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_descAppend(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_bondType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_couponType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_callable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_putable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_coupon(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_convertible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_maturity(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_issueDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextOptionDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextOptionType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nextOptionPartial(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_notes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_evRule(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_evMultiplier(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.ITagValue: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String tag 'get set' : 
+    System.String value 'get set' : 
+  Methods:
+    get_tag(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_tag(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_value(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.ITagValueList: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    System.Object Item [Int32] 'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AddEmpty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Add(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface TWSLib.IOrder: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 orderId 'get set' : 
+    Int32 clientId 'get set' : 
+    Int32 permId 'get set' : 
+    System.String action 'get set' : 
+    Int32 totalQuantity 'get set' : 
+    System.String orderType 'get set' : 
+    Double lmtPrice 'get set' : 
+    Double auxPrice 'get set' : 
+    System.String timeInForce 'get set' : 
+    System.String activeStartTime 'get set' : 
+    System.String activeStopTime 'get set' : 
+    System.String ocaGroup 'get set' : 
+    Int32 ocaType 'get set' : 
+    System.String orderRef 'get set' : 
+    Int32 transmit 'get set' : 
+    Int32 parentId 'get set' : 
+    Int32 blockOrder 'get set' : 
+    Int32 sweepToFill 'get set' : 
+    Int32 displaySize 'get set' : 
+    Int32 triggerMethod 'get set' : 
+    Int32 outsideRth 'get set' : 
+    Int32 hidden 'get set' : 
+    System.String goodAfterTime 'get set' : 
+    System.String goodTillDate 'get set' : 
+    Int32 overridePercentageConstraints 'get set' : 
+    System.String rule80A 'get set' : 
+    Int32 allOrNone 'get set' : 
+    Int32 minQty 'get set' : 
+    Double percentOffset 'get set' : 
+    Double trailStopPrice 'get set' : 
+    Double trailingPercent 'get set' : 
+    Int32 whatIf 'get set' : 
+    Int32 notHeld 'get set' : 
+    System.String faGroup 'get set' : 
+    System.String faProfile 'get set' : 
+    System.String faMethod 'get set' : 
+    System.String faPercentage 'get set' : 
+    System.String openClose 'get set' : 
+    Int32 origin 'get set' : 
+    Int32 shortSaleSlot 'get set' : 
+    System.String designatedLocation 'get set' : 
+    Int32 exemptCode 'get set' : 
+    Double discretionaryAmt 'get set' : 
+    Int32 eTradeOnly 'get set' : 
+    Int32 firmQuoteOnly 'get set' : 
+    Double nbboPriceCap 'get set' : 
+    Int32 optOutSmartRouting 'get set' : 
+    Int32 auctionStrategy 'get set' : 
+    Double startingPrice 'get set' : 
+    Double stockRefPrice 'get set' : 
+    Double delta 'get set' : 
+    Double stockRangeLower 'get set' : 
+    Double stockRangeUpper 'get set' : 
+    Double volatility 'get set' : 
+    Int32 volatilityType 'get set' : 
+    Int32 continuousUpdate 'get set' : 
+    Int32 referencePriceType 'get set' : 
+    System.String deltaNeutralOrderType 'get set' : 
+    Double deltaNeutralAuxPrice 'get set' : 
+    Int32 deltaNeutralConId 'get set' : 
+    System.String deltaNeutralSettlingFirm 'get set' : 
+    System.String deltaNeutralClearingAccount 'get set' : 
+    System.String deltaNeutralClearingIntent 'get set' : 
+    System.String deltaNeutralOpenClose 'get set' : 
+    Int32 deltaNeutralShortSale 'get set' : 
+    Int32 deltaNeutralShortSaleSlot 'get set' : 
+    System.String deltaNeutralDesignatedLocation 'get set' : 
+    Double basisPoints 'get set' : 
+    Int32 basisPointsType 'get set' : 
+    Int32 scaleInitLevelSize 'get set' : 
+    Int32 scaleSubsLevelSize 'get set' : 
+    Double scalePriceIncrement 'get set' : 
+    Double scalePriceAdjustValue 'get set' : 
+    Int32 scalePriceAdjustInterval 'get set' : 
+    Double scaleProfitOffset 'get set' : 
+    Int32 scaleAutoReset 'get set' : 
+    Int32 scaleInitPosition 'get set' : 
+    Int32 scaleInitFillQty 'get set' : 
+    Int32 scaleRandomPercent 'get set' : 
+    System.String scaleTable 'get set' : 
+    System.String hedgeType 'get set' : 
+    System.String hedgeParam 'get set' : 
+    System.String account 'get set' : 
+    System.String settlingFirm 'get set' : 
+    System.String clearingAccount 'get set' : 
+    System.String clearingIntent 'get set' : 
+    System.String algoStrategy 'get set' : 
+    System.Object algoParams 'get set' : 
+    System.Object smartComboRoutingParams 'get set' : 
+    System.Object orderComboLegs 'get set' : 
+    System.Object orderMiscOptions 'get set' : 
+  Methods:
+    get_clearingIntent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_clearingIntent(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_algoStrategy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_algoStrategy(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_algoParams(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_algoParams(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_smartComboRoutingParams(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_smartComboRoutingParams(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_orderComboLegs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_orderComboLegs(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_orderMiscOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_orderMiscOptions(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_discretionaryAmt(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_eTradeOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_eTradeOnly(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firmQuoteOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_firmQuoteOnly(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nbboPriceCap(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nbboPriceCap(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_optOutSmartRouting(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_optOutSmartRouting(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_auctionStrategy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_auctionStrategy(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_startingPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_startingPrice(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_stockRefPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_stockRefPrice(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_delta(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_delta(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_stockRangeLower(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_stockRangeLower(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_stockRangeUpper(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_stockRangeUpper(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_volatility(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_volatility(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_volatilityType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_volatilityType(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_continuousUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_continuousUpdate(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_referencePriceType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_referencePriceType(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralOrderType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralOrderType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralAuxPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralAuxPrice(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralConId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralConId(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralSettlingFirm(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralSettlingFirm(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralClearingAccount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralClearingAccount(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralClearingIntent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralClearingIntent(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralOpenClose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralOpenClose(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralShortSale(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralShortSale(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralShortSaleSlot(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralShortSaleSlot(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralDesignatedLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralDesignatedLocation(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_basisPoints(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_basisPoints(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_basisPointsType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_basisPointsType(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scaleInitLevelSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scaleInitLevelSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scaleSubsLevelSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scaleSubsLevelSize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scalePriceIncrement(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scalePriceIncrement(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scalePriceAdjustValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scalePriceAdjustValue(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scalePriceAdjustInterval(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scalePriceAdjustInterval(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scaleProfitOffset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scaleProfitOffset(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scaleAutoReset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scaleAutoReset(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scaleInitPosition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scaleInitPosition(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scaleInitFillQty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scaleInitFillQty(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scaleRandomPercent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scaleRandomPercent(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scaleTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scaleTable(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_hedgeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_hedgeType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_hedgeParam(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_hedgeParam(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_account(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_account(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_settlingFirm(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_settlingFirm(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_clearingAccount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_clearingAccount(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_orderId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_orderId(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_clientId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_clientId(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_permId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_permId(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_action(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_action(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_totalQuantity(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_totalQuantity(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_orderType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_orderType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_lmtPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_lmtPrice(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_auxPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_auxPrice(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_timeInForce(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_timeInForce(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_activeStartTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_activeStartTime(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_activeStopTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_activeStopTime(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ocaGroup(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ocaGroup(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ocaType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ocaType(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_orderRef(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_orderRef(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_transmit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_transmit(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_parentId(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_blockOrder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_blockOrder(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_sweepToFill(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_sweepToFill(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_displaySize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_displaySize(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_triggerMethod(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_triggerMethod(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_outsideRth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_outsideRth(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_hidden(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_hidden(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_goodAfterTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_goodAfterTime(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_goodTillDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_goodTillDate(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_overridePercentageConstraints(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_overridePercentageConstraints(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_rule80A(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_rule80A(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_allOrNone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_allOrNone(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_minQty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_minQty(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_percentOffset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_percentOffset(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_trailStopPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_trailStopPrice(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_trailingPercent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_trailingPercent(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_whatIf(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_whatIf(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_notHeld(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_notHeld(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_faGroup(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_faGroup(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_faProfile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_faProfile(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_faMethod(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_faMethod(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_faPercentage(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_faPercentage(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_openClose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_openClose(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_origin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_origin(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_shortSaleSlot(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_shortSaleSlot(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_designatedLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_designatedLocation(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_exemptCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_exemptCode(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_discretionaryAmt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.IOrderState: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String status 'get ' : 
+    System.String initMargin 'get ' : 
+    System.String maintMargin 'get ' : 
+    System.String equityWithLoan 'get ' : 
+    Double commission 'get ' : 
+    Double minCommission 'get ' : 
+    Double maxCommission 'get ' : 
+    System.String commissionCurrency 'get ' : 
+    System.String warningText 'get ' : 
+  Methods:
+    get_status(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_initMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_maintMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_equityWithLoan(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_commission(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_minCommission(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_maxCommission(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_commissionCurrency(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_warningText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.IExecution: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String execId 'get ' : 
+    Int32 orderId 'get ' : 
+    Int32 clientId 'get ' : 
+    Int32 permId 'get ' : 
+    System.String time 'get ' : 
+    System.String acctNumber 'get ' : 
+    System.String exchange 'get ' : 
+    System.String side 'get ' : 
+    Int32 shares 'get ' : 
+    Double price 'get ' : 
+    Int32 liquidation 'get ' : 
+    Int32 cumQty 'get ' : 
+    Double avgPrice 'get ' : 
+    System.String orderRef 'get ' : 
+    System.String evRule 'get ' : 
+    Double evMultiplier 'get ' : 
+  Methods:
+    get_execId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_orderId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_clientId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_permId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_time(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_acctNumber(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_exchange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_side(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_shares(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_price(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_liquidation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_cumQty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_avgPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_orderRef(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_evRule(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_evMultiplier(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.IExecutionFilter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 clientId 'get set' : 
+    System.String acctCode 'get set' : 
+    System.String time 'get set' : 
+    System.String symbol 'get set' : 
+    System.String secType 'get set' : 
+    System.String exchange 'get set' : 
+    System.String side 'get set' : 
+  Methods:
+    get_clientId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_clientId(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_acctCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_acctCode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_time(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_time(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_symbol(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_symbol(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_secType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_secType(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_exchange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_exchange(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_side(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_side(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.IScannerSubscription: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String instrument 'get set' : 
+    System.String locations 'get set' : 
+    System.String scanCode 'get set' : 
+    Int32 numberOfRows 'get set' : 
+    Double priceAbove 'get set' : 
+    Double priceBelow 'get set' : 
+    Int32 volumeAbove 'get set' : 
+    Int32 averageOptionVolumeAbove 'get set' : 
+    Double marketCapAbove 'get set' : 
+    Double marketCapBelow 'get set' : 
+    System.String moodyRatingAbove 'get set' : 
+    System.String moodyRatingBelow 'get set' : 
+    System.String spRatingAbove 'get set' : 
+    System.String spRatingBelow 'get set' : 
+    System.String maturityDateAbove 'get set' : 
+    System.String maturityDateBelow 'get set' : 
+    Double couponRateAbove 'get set' : 
+    Double couponRateBelow 'get set' : 
+    Int32 excludeConvertible 'get set' : 
+    System.String scannerSettingPairs 'get set' : 
+    System.String stockTypeFilter 'get set' : 
+  Methods:
+    get_instrument(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_instrument(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_locations(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_locations(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scanCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scanCode(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_numberOfRows(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_numberOfRows(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_priceAbove(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_priceAbove(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_priceBelow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_priceBelow(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_volumeAbove(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_volumeAbove(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_averageOptionVolumeAbove(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_averageOptionVolumeAbove(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_marketCapAbove(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_marketCapAbove(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_marketCapBelow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_marketCapBelow(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_moodyRatingAbove(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_moodyRatingAbove(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_moodyRatingBelow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_moodyRatingBelow(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_spRatingAbove(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_spRatingAbove(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_spRatingBelow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_spRatingBelow(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_maturityDateAbove(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_maturityDateAbove(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_maturityDateBelow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_maturityDateBelow(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_couponRateAbove(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_couponRateAbove(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_couponRateBelow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_couponRateBelow(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_excludeConvertible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_excludeConvertible(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scannerSettingPairs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scannerSettingPairs(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_stockTypeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_stockTypeFilter(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.IOrderComboLeg: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Double price 'get set' : 
+  Methods:
+    get_price(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_price(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib.IOrderComboLegList: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    System.Object Item [Int32] 'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Add(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface TWSLib.ICommissionReport: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String execId 'get ' : 
+    Double commission 'get ' : 
+    System.String currency 'get ' : 
+    Double realizedPNL 'get ' : 
+    Double yield 'get ' : 
+    Int32 yieldRedemptionDate 'get ' : 
+  Methods:
+    get_execId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_commission(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_currency(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_realizedPNL(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_yield(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_yieldRedemptionDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib._DTws: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String account 'get set' : 
+    System.String tif 'get set' : 
+    System.String oca 'get set' : 
+    System.String orderRef 'get set' : 
+    Int32 origin 'get set' : 
+    Int32 transmit 'get set' : 
+    System.String openClose 'get set' : 
+    Int32 parentId 'get set' : 
+    Int32 blockOrder 'get set' : 
+    Int32 sweepToFill 'get set' : 
+    Int32 displaySize 'get set' : 
+    Int32 triggerMethod 'get set' : 
+    Int32 outsideRth 'get set' : 
+    Int32 hidden 'get set' : 
+    Int32 clientIdFilter 'get set' : 
+    System.String acctCodeFilter 'get set' : 
+    System.String timeFilter 'get set' : 
+    System.String symbolFilter 'get set' : 
+    System.String secTypeFilter 'get set' : 
+    System.String exchangeFilter 'get set' : 
+    System.String sideFilter 'get set' : 
+    Double discretionaryAmt 'get set' : 
+    Int32 shortSaleSlot 'get set' : 
+    System.String designatedLocation 'get set' : 
+    Int32 ocaType 'get set' : 
+    Int32 exemptCode 'get set' : 
+    System.String rule80A 'get set' : 
+    System.String settlingFirm 'get set' : 
+    Int32 allOrNone 'get set' : 
+    Int32 minQty 'get set' : 
+    Double percentOffset 'get set' : 
+    Int32 eTradeOnly 'get set' : 
+    Int32 firmQuoteOnly 'get set' : 
+    Double nbboPriceCap 'get set' : 
+    Int32 auctionStrategy 'get set' : 
+    Double startingPrice 'get set' : 
+    Double stockRefPrice 'get set' : 
+    Double delta 'get set' : 
+    Double stockRangeLower 'get set' : 
+    Double stockRangeUpper 'get set' : 
+    System.String TwsConnectionTime 'get set' : 
+    Int32 serverVersion 'get set' : 
+    Int32 overridePercentageConstraints 'get set' : 
+    Double volatility 'get set' : 
+    Int32 volatilityType 'get set' : 
+    System.String deltaNeutralOrderType 'get set' : 
+    Double deltaNeutralAuxPrice 'get set' : 
+    Int32 continuousUpdate 'get set' : 
+    Int32 referencePriceType 'get set' : 
+    Double trailStopPrice 'get set' : 
+    Int32 scaleInitLevelSize 'get set' : 
+    Int32 scaleSubsLevelSize 'get set' : 
+    Double scalePriceIncrement 'get set' : 
+  Methods:
+    updateDisplayGroup(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    unsubscribeFromGroupEvents(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createContract(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createComboLegList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createOrder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createExecutionFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createScannerSubscription(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createUnderComp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createTagValueList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    createOrderComboLegList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    set_overridePercentageConstraints(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_volatility(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_volatility(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_volatilityType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_volatilityType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralOrderType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralOrderType(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_deltaNeutralAuxPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_deltaNeutralAuxPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_continuousUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_continuousUpdate(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_referencePriceType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_referencePriceType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_trailStopPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_trailStopPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scaleInitLevelSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scaleInitLevelSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scaleSubsLevelSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scaleSubsLevelSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_scalePriceIncrement(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_scalePriceIncrement(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cancelMktData(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelOrder(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    placeOrder(Int32, String(HasFieldMarshal), Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    disconnect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    connect(String(HasFieldMarshal), Int32, Int32, Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqMktData(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqOpenOrders(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqAccountUpdates(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqExecutions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqIds(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqMktData2(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    placeOrder2(Int32, String(HasFieldMarshal), Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqContractDetails(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqContractDetails2(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqMktDepth(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqMktDepth2(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelMktDepth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    addComboLeg(Int32, String(HasFieldMarshal), Int32, String(HasFieldMarshal), Int32, Int32, String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    clearComboLegs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelNewsBulletins(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqNewsBulletins(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    setServerLogLevel(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqAutoOpenOrders(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqAllOpenOrders(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqManagedAccts(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    requestFA(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    replaceFA(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqHistoricalData(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    exerciseOptions(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqScannerParameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqScannerSubscription(Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, Double, Int32, Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, Double, Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelHistoricalData(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelScannerSubscription(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    resetAllProperties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqRealTimeBars(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32, String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelRealTimeBars(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqCurrentTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqFundamentalData(Int32, IContract(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelFundamentalData(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    calculateImpliedVolatility(Int32, IContract(HasFieldMarshal), Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    calculateOptionPrice(Int32, IContract(HasFieldMarshal), Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelCalculateImpliedVolatility(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelCalculateOptionPrice(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqGlobalCancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqMarketDataType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqContractDetailsEx(Int32, IContract(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqMktDataEx(Int32, IContract(HasFieldMarshal), String(HasFieldMarshal), Int32, ITagValueList(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqMktDepthEx(Int32, IContract(HasFieldMarshal), Int32, ITagValueList(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    placeOrderEx(Int32, IContract(HasFieldMarshal), IOrder(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqExecutionsEx(Int32, IExecutionFilter(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    exerciseOptionsEx(Int32, IContract(HasFieldMarshal), Int32, Int32, String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqHistoricalDataEx(Int32, IContract(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32, ITagValueList(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqRealTimeBarsEx(Int32, IContract(HasFieldMarshal), Int32, String(HasFieldMarshal), Int32, ITagValueList(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqScannerSubscriptionEx(Int32, IScannerSubscription(HasFieldMarshal), ITagValueList(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    addOrderComboLeg(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    clearOrderComboLegs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqPositions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelPositions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    reqAccountSummary(Int32, String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    cancelAccountSummary(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    verifyRequest(String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    verifyMessage(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    queryDisplayGroups(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    subscribeToGroupEvents(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_account(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_account(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_tif(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_tif(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_oca(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_oca(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_orderRef(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_orderRef(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_origin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_origin(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_transmit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_transmit(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_openClose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_openClose(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_parentId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_parentId(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_blockOrder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_blockOrder(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_sweepToFill(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_sweepToFill(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_displaySize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_displaySize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_triggerMethod(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_triggerMethod(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_outsideRth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_outsideRth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_hidden(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_hidden(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_clientIdFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_clientIdFilter(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_acctCodeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_acctCodeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_timeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_timeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_symbolFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_symbolFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_secTypeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_secTypeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_exchangeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_exchangeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_sideFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_sideFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_discretionaryAmt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_discretionaryAmt(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_shortSaleSlot(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_shortSaleSlot(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_designatedLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_designatedLocation(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ocaType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ocaType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_exemptCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_exemptCode(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_rule80A(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_rule80A(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_settlingFirm(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_settlingFirm(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_allOrNone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_allOrNone(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_minQty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_minQty(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_percentOffset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_percentOffset(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_eTradeOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_eTradeOnly(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_firmQuoteOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_firmQuoteOnly(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_nbboPriceCap(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_nbboPriceCap(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_auctionStrategy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_auctionStrategy(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_startingPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_startingPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_stockRefPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_stockRefPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_delta(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_delta(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_stockRangeLower(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_stockRangeLower(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_stockRangeUpper(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_stockRangeUpper(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TwsConnectionTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TwsConnectionTime(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_serverVersion(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_serverVersion(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_overridePercentageConstraints(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface TWSLib._DTwsEvents: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    tickPrice(Int32, Int32, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    tickSize(Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    connectionClosed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    openOrder1(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    openOrder2(Int32, String(HasFieldMarshal), Int32, String(HasFieldMarshal), Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    updateAccountTime(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    updateAccountValue(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    nextValidId(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    permId(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    errMsg(Int32, Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    updatePortfolio(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Double, Double, Double, Double, Double, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    orderStatus(Int32, String(HasFieldMarshal), Int32, Int32, Double, Int32, Int32, Double, Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    contractDetails(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Double, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    execDetails(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Double, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    updateMktDepth(Int32, Int32, Int32, Int32, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    updateMktDepthL2(Int32, Int32, String(HasFieldMarshal), Int32, Int32, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    updateNewsBulletin(Int16, Int16, String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    managedAccounts(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    openOrder3(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    receiveFA(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    historicalData(Int32, String(HasFieldMarshal), Double, Double, Double, Double, Int32, Int32, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    openOrder4(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32, Double, Int32, Int32, Double, Int32, Double, Double, Double, Double, Double, Int32, Int32, Int32, Int32, Double, Int32, Int32, Int32, Int32, String(HasFieldMarshal), Double, Int32, String(HasFieldMarshal), Double, Int32, Int32, Double, Double, Int32, String(HasFieldMarshal), Int32, Int32, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    bondContractDetails(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    scannerParameters(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    scannerData(Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    tickOptionComputation(Int32, Int32, Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    tickGeneric(Int32, Int32, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    tickString(Int32, Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    tickEFP(Int32, Int32, Double, String(HasFieldMarshal), Double, Int32, String(HasFieldMarshal), Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    realtimeBar(Int32, Int32, Double, Double, Double, Double, Int32, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    currentTime(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    scannerDataEnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    fundamentalData(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    contractDetailsEnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    openOrderEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    accountDownloadEnd(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    execDetailsEnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    deltaNeutralValidation(Int32, IUnderComp(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    tickSnapshotEnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    marketDataType(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    contractDetailsEx(Int32, IContractDetails(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    openOrderEx(Int32, IContract(HasFieldMarshal), IOrder(HasFieldMarshal), IOrderState(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    execDetailsEx(Int32, IContract(HasFieldMarshal), IExecution(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    updatePortfolioEx(IContract(HasFieldMarshal), Int32, Double, Double, Double, Double, Double, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    scannerDataEx(Int32, Int32, IContractDetails(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    commissionReport(ICommissionReport(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    position(String(HasFieldMarshal), IContract(HasFieldMarshal), Int32, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    positionEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    accountSummary(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    accountSummaryEnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    verifyMessageAPI(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    verifyCompleted(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    displayGroupList(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    displayGroupUpdated(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TWSLib.TwsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    TWSLib._DTws
+    TWSLib.Tws
+    TWSLib._DTwsEvents_Event
+  Properties:
+    System.String account 'get set' : 
+    System.String tif 'get set' : 
+    System.String oca 'get set' : 
+    System.String orderRef 'get set' : 
+    Int32 origin 'get set' : 
+    Int32 transmit 'get set' : 
+    System.String openClose 'get set' : 
+    Int32 parentId 'get set' : 
+    Int32 blockOrder 'get set' : 
+    Int32 sweepToFill 'get set' : 
+    Int32 displaySize 'get set' : 
+    Int32 triggerMethod 'get set' : 
+    Int32 outsideRth 'get set' : 
+    Int32 hidden 'get set' : 
+    Int32 clientIdFilter 'get set' : 
+    System.String acctCodeFilter 'get set' : 
+    System.String timeFilter 'get set' : 
+    System.String symbolFilter 'get set' : 
+    System.String secTypeFilter 'get set' : 
+    System.String exchangeFilter 'get set' : 
+    System.String sideFilter 'get set' : 
+    Double discretionaryAmt 'get set' : 
+    Int32 shortSaleSlot 'get set' : 
+    System.String designatedLocation 'get set' : 
+    Int32 ocaType 'get set' : 
+    Int32 exemptCode 'get set' : 
+    System.String rule80A 'get set' : 
+    System.String settlingFirm 'get set' : 
+    Int32 allOrNone 'get set' : 
+    Int32 minQty 'get set' : 
+    Double percentOffset 'get set' : 
+    Int32 eTradeOnly 'get set' : 
+    Int32 firmQuoteOnly 'get set' : 
+    Double nbboPriceCap 'get set' : 
+    Int32 auctionStrategy 'get set' : 
+    Double startingPrice 'get set' : 
+    Double stockRefPrice 'get set' : 
+    Double delta 'get set' : 
+    Double stockRangeLower 'get set' : 
+    Double stockRangeUpper 'get set' : 
+    System.String TwsConnectionTime 'get set' : 
+    Int32 serverVersion 'get set' : 
+    Int32 overridePercentageConstraints 'get set' : 
+    Double volatility 'get set' : 
+    Int32 volatilityType 'get set' : 
+    System.String deltaNeutralOrderType 'get set' : 
+    Double deltaNeutralAuxPrice 'get set' : 
+    Int32 continuousUpdate 'get set' : 
+    Int32 referencePriceType 'get set' : 
+    Double trailStopPrice 'get set' : 
+    Int32 scaleInitLevelSize 'get set' : 
+    Int32 scaleSubsLevelSize 'get set' : 
+    Double scalePriceIncrement 'get set' : 
+  Events:
+    TWSLib._DTwsEvents_tickPriceEventHandler tickPrice: 
+    TWSLib._DTwsEvents_tickSizeEventHandler tickSize: 
+    TWSLib._DTwsEvents_connectionClosedEventHandler connectionClosed: 
+    TWSLib._DTwsEvents_openOrder1EventHandler openOrder1: 
+    TWSLib._DTwsEvents_openOrder2EventHandler openOrder2: 
+    TWSLib._DTwsEvents_updateAccountTimeEventHandler updateAccountTime: 
+    TWSLib._DTwsEvents_updateAccountValueEventHandler updateAccountValue: 
+    TWSLib._DTwsEvents_nextValidIdEventHandler nextValidId: 
+    TWSLib._DTwsEvents_permIdEventHandler permId: 
+    TWSLib._DTwsEvents_errMsgEventHandler errMsg: 
+    TWSLib._DTwsEvents_updatePortfolioEventHandler updatePortfolio: 
+    TWSLib._DTwsEvents_orderStatusEventHandler orderStatus: 
+    TWSLib._DTwsEvents_contractDetailsEventHandler contractDetails: 
+    TWSLib._DTwsEvents_execDetailsEventHandler execDetails: 
+    TWSLib._DTwsEvents_updateMktDepthEventHandler updateMktDepth: 
+    TWSLib._DTwsEvents_updateMktDepthL2EventHandler updateMktDepthL2: 
+    TWSLib._DTwsEvents_updateNewsBulletinEventHandler updateNewsBulletin: 
+    TWSLib._DTwsEvents_managedAccountsEventHandler managedAccounts: 
+    TWSLib._DTwsEvents_openOrder3EventHandler openOrder3: 
+    TWSLib._DTwsEvents_receiveFAEventHandler receiveFA: 
+    TWSLib._DTwsEvents_historicalDataEventHandler historicalData: 
+    TWSLib._DTwsEvents_openOrder4EventHandler openOrder4: 
+    TWSLib._DTwsEvents_bondContractDetailsEventHandler bondContractDetails: 
+    TWSLib._DTwsEvents_scannerParametersEventHandler scannerParameters: 
+    TWSLib._DTwsEvents_scannerDataEventHandler scannerData: 
+    TWSLib._DTwsEvents_tickOptionComputationEventHandler tickOptionComputation: 
+    TWSLib._DTwsEvents_tickGenericEventHandler tickGeneric: 
+    TWSLib._DTwsEvents_tickStringEventHandler tickString: 
+    TWSLib._DTwsEvents_tickEFPEventHandler tickEFP: 
+    TWSLib._DTwsEvents_realtimeBarEventHandler realtimeBar: 
+    TWSLib._DTwsEvents_currentTimeEventHandler currentTime: 
+    TWSLib._DTwsEvents_scannerDataEndEventHandler scannerDataEnd: 
+    TWSLib._DTwsEvents_fundamentalDataEventHandler fundamentalData: 
+    TWSLib._DTwsEvents_contractDetailsEndEventHandler contractDetailsEnd: 
+    TWSLib._DTwsEvents_openOrderEndEventHandler openOrderEnd: 
+    TWSLib._DTwsEvents_accountDownloadEndEventHandler accountDownloadEnd: 
+    TWSLib._DTwsEvents_execDetailsEndEventHandler execDetailsEnd: 
+    TWSLib._DTwsEvents_deltaNeutralValidationEventHandler deltaNeutralValidation: 
+    TWSLib._DTwsEvents_tickSnapshotEndEventHandler tickSnapshotEnd: 
+    TWSLib._DTwsEvents_marketDataTypeEventHandler marketDataType: 
+    TWSLib._DTwsEvents_contractDetailsExEventHandler contractDetailsEx: 
+    TWSLib._DTwsEvents_openOrderExEventHandler openOrderEx: 
+    TWSLib._DTwsEvents_execDetailsExEventHandler execDetailsEx: 
+    TWSLib._DTwsEvents_updatePortfolioExEventHandler updatePortfolioEx: 
+    TWSLib._DTwsEvents_scannerDataExEventHandler scannerDataEx: 
+    TWSLib._DTwsEvents_commissionReportEventHandler commissionReport: 
+    TWSLib._DTwsEvents_positionEventHandler position: 
+    TWSLib._DTwsEvents_positionEndEventHandler positionEnd: 
+    TWSLib._DTwsEvents_accountSummaryEventHandler accountSummary: 
+    TWSLib._DTwsEvents_accountSummaryEndEventHandler accountSummaryEnd: 
+    TWSLib._DTwsEvents_verifyMessageAPIEventHandler verifyMessageAPI: 
+    TWSLib._DTwsEvents_verifyCompletedEventHandler verifyCompleted: 
+    TWSLib._DTwsEvents_displayGroupListEventHandler displayGroupList: 
+    TWSLib._DTwsEvents_displayGroupUpdatedEventHandler displayGroupUpdated: 
+  Methods:
+    add_deltaNeutralValidation(_DTwsEvents_deltaNeutralValidationEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_deltaNeutralValidation(_DTwsEvents_deltaNeutralValidationEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_tickSnapshotEnd(_DTwsEvents_tickSnapshotEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_tickSnapshotEnd(_DTwsEvents_tickSnapshotEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_marketDataType(_DTwsEvents_marketDataTypeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_marketDataType(_DTwsEvents_marketDataTypeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_contractDetailsEx(_DTwsEvents_contractDetailsExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_contractDetailsEx(_DTwsEvents_contractDetailsExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_openOrderEx(_DTwsEvents_openOrderExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_openOrderEx(_DTwsEvents_openOrderExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_execDetailsEx(_DTwsEvents_execDetailsExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_execDetailsEx(_DTwsEvents_execDetailsExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_updatePortfolioEx(_DTwsEvents_updatePortfolioExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_updatePortfolioEx(_DTwsEvents_updatePortfolioExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_scannerDataEx(_DTwsEvents_scannerDataExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_scannerDataEx(_DTwsEvents_scannerDataExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_commissionReport(_DTwsEvents_commissionReportEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_commissionReport(_DTwsEvents_commissionReportEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_position(_DTwsEvents_positionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_position(_DTwsEvents_positionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_positionEnd(_DTwsEvents_positionEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_positionEnd(_DTwsEvents_positionEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_accountSummary(_DTwsEvents_accountSummaryEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_accountSummary(_DTwsEvents_accountSummaryEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_accountSummaryEnd(_DTwsEvents_accountSummaryEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_accountSummaryEnd(_DTwsEvents_accountSummaryEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_verifyMessageAPI(_DTwsEvents_verifyMessageAPIEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_verifyMessageAPI(_DTwsEvents_verifyMessageAPIEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_verifyCompleted(_DTwsEvents_verifyCompletedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_verifyCompleted(_DTwsEvents_verifyCompletedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_displayGroupList(_DTwsEvents_displayGroupListEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_displayGroupList(_DTwsEvents_displayGroupListEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_displayGroupUpdated(_DTwsEvents_displayGroupUpdatedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_displayGroupUpdated(_DTwsEvents_displayGroupUpdatedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_orderStatus(_DTwsEvents_orderStatusEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_contractDetails(_DTwsEvents_contractDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_contractDetails(_DTwsEvents_contractDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_execDetails(_DTwsEvents_execDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_execDetails(_DTwsEvents_execDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_updateMktDepth(_DTwsEvents_updateMktDepthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_updateMktDepth(_DTwsEvents_updateMktDepthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_updateMktDepthL2(_DTwsEvents_updateMktDepthL2EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_updateMktDepthL2(_DTwsEvents_updateMktDepthL2EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_updateNewsBulletin(_DTwsEvents_updateNewsBulletinEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_updateNewsBulletin(_DTwsEvents_updateNewsBulletinEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_managedAccounts(_DTwsEvents_managedAccountsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_managedAccounts(_DTwsEvents_managedAccountsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_openOrder3(_DTwsEvents_openOrder3EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_openOrder3(_DTwsEvents_openOrder3EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_receiveFA(_DTwsEvents_receiveFAEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_receiveFA(_DTwsEvents_receiveFAEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_historicalData(_DTwsEvents_historicalDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_historicalData(_DTwsEvents_historicalDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_openOrder4(_DTwsEvents_openOrder4EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_openOrder4(_DTwsEvents_openOrder4EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_bondContractDetails(_DTwsEvents_bondContractDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_bondContractDetails(_DTwsEvents_bondContractDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_scannerParameters(_DTwsEvents_scannerParametersEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_scannerParameters(_DTwsEvents_scannerParametersEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_scannerData(_DTwsEvents_scannerDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_scannerData(_DTwsEvents_scannerDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_tickOptionComputation(_DTwsEvents_tickOptionComputationEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_tickOptionComputation(_DTwsEvents_tickOptionComputationEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_tickGeneric(_DTwsEvents_tickGenericEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_tickGeneric(_DTwsEvents_tickGenericEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_tickString(_DTwsEvents_tickStringEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_tickString(_DTwsEvents_tickStringEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_tickEFP(_DTwsEvents_tickEFPEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_tickEFP(_DTwsEvents_tickEFPEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_realtimeBar(_DTwsEvents_realtimeBarEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_realtimeBar(_DTwsEvents_realtimeBarEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_currentTime(_DTwsEvents_currentTimeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_currentTime(_DTwsEvents_currentTimeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_scannerDataEnd(_DTwsEvents_scannerDataEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_scannerDataEnd(_DTwsEvents_scannerDataEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_fundamentalData(_DTwsEvents_fundamentalDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_fundamentalData(_DTwsEvents_fundamentalDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_contractDetailsEnd(_DTwsEvents_contractDetailsEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_contractDetailsEnd(_DTwsEvents_contractDetailsEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_openOrderEnd(_DTwsEvents_openOrderEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_openOrderEnd(_DTwsEvents_openOrderEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_accountDownloadEnd(_DTwsEvents_accountDownloadEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_accountDownloadEnd(_DTwsEvents_accountDownloadEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_execDetailsEnd(_DTwsEvents_execDetailsEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_execDetailsEnd(_DTwsEvents_execDetailsEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktDataEx(Int32, IContract(HasFieldMarshal), String(HasFieldMarshal), Int32, ITagValueList(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktDepthEx(Int32, IContract(HasFieldMarshal), Int32, ITagValueList(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    placeOrderEx(Int32, IContract(HasFieldMarshal), IOrder(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqExecutionsEx(Int32, IExecutionFilter(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    exerciseOptionsEx(Int32, IContract(HasFieldMarshal), Int32, Int32, String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqHistoricalDataEx(Int32, IContract(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32, ITagValueList(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqRealTimeBarsEx(Int32, IContract(HasFieldMarshal), Int32, String(HasFieldMarshal), Int32, ITagValueList(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqScannerSubscriptionEx(Int32, IScannerSubscription(HasFieldMarshal), ITagValueList(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    addOrderComboLeg(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    clearOrderComboLegs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqPositions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelPositions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqAccountSummary(Int32, String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelAccountSummary(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    verifyRequest(String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    verifyMessage(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    queryDisplayGroups(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    subscribeToGroupEvents(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    updateDisplayGroup(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    unsubscribeFromGroupEvents(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createContract(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createComboLegList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createOrder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createExecutionFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createScannerSubscription(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createUnderComp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createTagValueList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    createOrderComboLegList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_tickPrice(_DTwsEvents_tickPriceEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_tickPrice(_DTwsEvents_tickPriceEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_tickSize(_DTwsEvents_tickSizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_tickSize(_DTwsEvents_tickSizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_connectionClosed(_DTwsEvents_connectionClosedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_connectionClosed(_DTwsEvents_connectionClosedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_openOrder1(_DTwsEvents_openOrder1EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_openOrder1(_DTwsEvents_openOrder1EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_openOrder2(_DTwsEvents_openOrder2EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_openOrder2(_DTwsEvents_openOrder2EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_updateAccountTime(_DTwsEvents_updateAccountTimeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_updateAccountTime(_DTwsEvents_updateAccountTimeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_updateAccountValue(_DTwsEvents_updateAccountValueEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_updateAccountValue(_DTwsEvents_updateAccountValueEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_nextValidId(_DTwsEvents_nextValidIdEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_nextValidId(_DTwsEvents_nextValidIdEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_permId(_DTwsEvents_permIdEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_permId(_DTwsEvents_permIdEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_errMsg(_DTwsEvents_errMsgEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_errMsg(_DTwsEvents_errMsgEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_updatePortfolio(_DTwsEvents_updatePortfolioEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_updatePortfolio(_DTwsEvents_updatePortfolioEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_orderStatus(_DTwsEvents_orderStatusEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    set_scaleInitLevelSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_scaleSubsLevelSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_scaleSubsLevelSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_scalePriceIncrement(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_scalePriceIncrement(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    cancelMktData(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelOrder(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    placeOrder(Int32, String(HasFieldMarshal), Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    disconnect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    connect(String(HasFieldMarshal), Int32, Int32, Int32(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktData(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqOpenOrders(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqAccountUpdates(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqExecutions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqIds(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktData2(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    placeOrder2(Int32, String(HasFieldMarshal), Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqContractDetails(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqContractDetails2(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktDepth(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMktDepth2(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelMktDepth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    addComboLeg(Int32, String(HasFieldMarshal), Int32, String(HasFieldMarshal), Int32, Int32, String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    clearComboLegs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelNewsBulletins(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqNewsBulletins(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setServerLogLevel(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqAutoOpenOrders(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqAllOpenOrders(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqManagedAccts(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    requestFA(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    replaceFA(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqHistoricalData(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    exerciseOptions(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqScannerParameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqScannerSubscription(Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, Double, Int32, Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, Double, Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelHistoricalData(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelScannerSubscription(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    resetAllProperties(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqRealTimeBars(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32, String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelRealTimeBars(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqCurrentTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqFundamentalData(Int32, IContract(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelFundamentalData(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    calculateImpliedVolatility(Int32, IContract(HasFieldMarshal), Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    calculateOptionPrice(Int32, IContract(HasFieldMarshal), Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelCalculateImpliedVolatility(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cancelCalculateOptionPrice(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqGlobalCancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqMarketDataType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    reqContractDetailsEx(Int32, IContract(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_exemptCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_exemptCode(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_rule80A(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_rule80A(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_settlingFirm(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_settlingFirm(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_allOrNone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_allOrNone(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_minQty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_minQty(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_percentOffset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_percentOffset(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_eTradeOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_eTradeOnly(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_firmQuoteOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_firmQuoteOnly(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_nbboPriceCap(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_nbboPriceCap(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_auctionStrategy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_auctionStrategy(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_startingPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_startingPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_stockRefPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_stockRefPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_delta(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_delta(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_stockRangeLower(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_stockRangeLower(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_stockRangeUpper(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_stockRangeUpper(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TwsConnectionTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TwsConnectionTime(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_serverVersion(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_serverVersion(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_overridePercentageConstraints(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_overridePercentageConstraints(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_volatility(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_volatility(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_volatilityType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_volatilityType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_deltaNeutralOrderType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_deltaNeutralOrderType(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_deltaNeutralAuxPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_deltaNeutralAuxPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_continuousUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_continuousUpdate(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_referencePriceType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_referencePriceType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_trailStopPrice(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_trailStopPrice(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_scaleInitLevelSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_account(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_account(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_tif(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_tif(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_oca(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_oca(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_orderRef(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_orderRef(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_origin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_origin(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_transmit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_transmit(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_openClose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_openClose(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_parentId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_parentId(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_blockOrder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_blockOrder(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_sweepToFill(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_sweepToFill(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_displaySize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_displaySize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_triggerMethod(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_triggerMethod(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_outsideRth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_outsideRth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_hidden(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_hidden(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_clientIdFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_clientIdFilter(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_acctCodeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_acctCodeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_timeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_timeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_symbolFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_symbolFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_secTypeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_secTypeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_exchangeFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_exchangeFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_sideFilter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_sideFilter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_discretionaryAmt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_discretionaryAmt(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_shortSaleSlot(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_shortSaleSlot(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_designatedLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_designatedLocation(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ocaType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ocaType(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface TWSLib._DTwsEvents_Event: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    TWSLib._DTwsEvents_tickPriceEventHandler tickPrice: 
+    TWSLib._DTwsEvents_tickSizeEventHandler tickSize: 
+    TWSLib._DTwsEvents_connectionClosedEventHandler connectionClosed: 
+    TWSLib._DTwsEvents_openOrder1EventHandler openOrder1: 
+    TWSLib._DTwsEvents_openOrder2EventHandler openOrder2: 
+    TWSLib._DTwsEvents_updateAccountTimeEventHandler updateAccountTime: 
+    TWSLib._DTwsEvents_updateAccountValueEventHandler updateAccountValue: 
+    TWSLib._DTwsEvents_nextValidIdEventHandler nextValidId: 
+    TWSLib._DTwsEvents_permIdEventHandler permId: 
+    TWSLib._DTwsEvents_errMsgEventHandler errMsg: 
+    TWSLib._DTwsEvents_updatePortfolioEventHandler updatePortfolio: 
+    TWSLib._DTwsEvents_orderStatusEventHandler orderStatus: 
+    TWSLib._DTwsEvents_contractDetailsEventHandler contractDetails: 
+    TWSLib._DTwsEvents_execDetailsEventHandler execDetails: 
+    TWSLib._DTwsEvents_updateMktDepthEventHandler updateMktDepth: 
+    TWSLib._DTwsEvents_updateMktDepthL2EventHandler updateMktDepthL2: 
+    TWSLib._DTwsEvents_updateNewsBulletinEventHandler updateNewsBulletin: 
+    TWSLib._DTwsEvents_managedAccountsEventHandler managedAccounts: 
+    TWSLib._DTwsEvents_openOrder3EventHandler openOrder3: 
+    TWSLib._DTwsEvents_receiveFAEventHandler receiveFA: 
+    TWSLib._DTwsEvents_historicalDataEventHandler historicalData: 
+    TWSLib._DTwsEvents_openOrder4EventHandler openOrder4: 
+    TWSLib._DTwsEvents_bondContractDetailsEventHandler bondContractDetails: 
+    TWSLib._DTwsEvents_scannerParametersEventHandler scannerParameters: 
+    TWSLib._DTwsEvents_scannerDataEventHandler scannerData: 
+    TWSLib._DTwsEvents_tickOptionComputationEventHandler tickOptionComputation: 
+    TWSLib._DTwsEvents_tickGenericEventHandler tickGeneric: 
+    TWSLib._DTwsEvents_tickStringEventHandler tickString: 
+    TWSLib._DTwsEvents_tickEFPEventHandler tickEFP: 
+    TWSLib._DTwsEvents_realtimeBarEventHandler realtimeBar: 
+    TWSLib._DTwsEvents_currentTimeEventHandler currentTime: 
+    TWSLib._DTwsEvents_scannerDataEndEventHandler scannerDataEnd: 
+    TWSLib._DTwsEvents_fundamentalDataEventHandler fundamentalData: 
+    TWSLib._DTwsEvents_contractDetailsEndEventHandler contractDetailsEnd: 
+    TWSLib._DTwsEvents_openOrderEndEventHandler openOrderEnd: 
+    TWSLib._DTwsEvents_accountDownloadEndEventHandler accountDownloadEnd: 
+    TWSLib._DTwsEvents_execDetailsEndEventHandler execDetailsEnd: 
+    TWSLib._DTwsEvents_deltaNeutralValidationEventHandler deltaNeutralValidation: 
+    TWSLib._DTwsEvents_tickSnapshotEndEventHandler tickSnapshotEnd: 
+    TWSLib._DTwsEvents_marketDataTypeEventHandler marketDataType: 
+    TWSLib._DTwsEvents_contractDetailsExEventHandler contractDetailsEx: 
+    TWSLib._DTwsEvents_openOrderExEventHandler openOrderEx: 
+    TWSLib._DTwsEvents_execDetailsExEventHandler execDetailsEx: 
+    TWSLib._DTwsEvents_updatePortfolioExEventHandler updatePortfolioEx: 
+    TWSLib._DTwsEvents_scannerDataExEventHandler scannerDataEx: 
+    TWSLib._DTwsEvents_commissionReportEventHandler commissionReport: 
+    TWSLib._DTwsEvents_positionEventHandler position: 
+    TWSLib._DTwsEvents_positionEndEventHandler positionEnd: 
+    TWSLib._DTwsEvents_accountSummaryEventHandler accountSummary: 
+    TWSLib._DTwsEvents_accountSummaryEndEventHandler accountSummaryEnd: 
+    TWSLib._DTwsEvents_verifyMessageAPIEventHandler verifyMessageAPI: 
+    TWSLib._DTwsEvents_verifyCompletedEventHandler verifyCompleted: 
+    TWSLib._DTwsEvents_displayGroupListEventHandler displayGroupList: 
+    TWSLib._DTwsEvents_displayGroupUpdatedEventHandler displayGroupUpdated: 
+  Methods:
+    remove_execDetailsEx(_DTwsEvents_execDetailsExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_updatePortfolioEx(_DTwsEvents_updatePortfolioExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_updatePortfolioEx(_DTwsEvents_updatePortfolioExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_scannerDataEx(_DTwsEvents_scannerDataExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_scannerDataEx(_DTwsEvents_scannerDataExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_commissionReport(_DTwsEvents_commissionReportEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_commissionReport(_DTwsEvents_commissionReportEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_position(_DTwsEvents_positionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_position(_DTwsEvents_positionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_positionEnd(_DTwsEvents_positionEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_positionEnd(_DTwsEvents_positionEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_accountSummary(_DTwsEvents_accountSummaryEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_accountSummary(_DTwsEvents_accountSummaryEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_accountSummaryEnd(_DTwsEvents_accountSummaryEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_accountSummaryEnd(_DTwsEvents_accountSummaryEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_verifyMessageAPI(_DTwsEvents_verifyMessageAPIEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_verifyMessageAPI(_DTwsEvents_verifyMessageAPIEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_verifyCompleted(_DTwsEvents_verifyCompletedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_verifyCompleted(_DTwsEvents_verifyCompletedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_displayGroupList(_DTwsEvents_displayGroupListEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_displayGroupList(_DTwsEvents_displayGroupListEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_displayGroupUpdated(_DTwsEvents_displayGroupUpdatedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_displayGroupUpdated(_DTwsEvents_displayGroupUpdatedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_tickPrice(_DTwsEvents_tickPriceEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_tickPrice(_DTwsEvents_tickPriceEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_tickSize(_DTwsEvents_tickSizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_tickSize(_DTwsEvents_tickSizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_connectionClosed(_DTwsEvents_connectionClosedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_connectionClosed(_DTwsEvents_connectionClosedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_openOrder1(_DTwsEvents_openOrder1EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_openOrder1(_DTwsEvents_openOrder1EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_openOrder2(_DTwsEvents_openOrder2EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_openOrder2(_DTwsEvents_openOrder2EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_updateAccountTime(_DTwsEvents_updateAccountTimeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_updateAccountTime(_DTwsEvents_updateAccountTimeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_updateAccountValue(_DTwsEvents_updateAccountValueEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_updateAccountValue(_DTwsEvents_updateAccountValueEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_nextValidId(_DTwsEvents_nextValidIdEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_nextValidId(_DTwsEvents_nextValidIdEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_permId(_DTwsEvents_permIdEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_permId(_DTwsEvents_permIdEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_errMsg(_DTwsEvents_errMsgEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_errMsg(_DTwsEvents_errMsgEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_updatePortfolio(_DTwsEvents_updatePortfolioEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_updatePortfolio(_DTwsEvents_updatePortfolioEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_orderStatus(_DTwsEvents_orderStatusEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_orderStatus(_DTwsEvents_orderStatusEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_contractDetails(_DTwsEvents_contractDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_contractDetails(_DTwsEvents_contractDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_execDetails(_DTwsEvents_execDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_execDetails(_DTwsEvents_execDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_updateMktDepth(_DTwsEvents_updateMktDepthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_updateMktDepth(_DTwsEvents_updateMktDepthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_updateMktDepthL2(_DTwsEvents_updateMktDepthL2EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_updateMktDepthL2(_DTwsEvents_updateMktDepthL2EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_updateNewsBulletin(_DTwsEvents_updateNewsBulletinEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_updateNewsBulletin(_DTwsEvents_updateNewsBulletinEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_managedAccounts(_DTwsEvents_managedAccountsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_managedAccounts(_DTwsEvents_managedAccountsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_openOrder3(_DTwsEvents_openOrder3EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_openOrder3(_DTwsEvents_openOrder3EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_receiveFA(_DTwsEvents_receiveFAEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_receiveFA(_DTwsEvents_receiveFAEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_historicalData(_DTwsEvents_historicalDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_historicalData(_DTwsEvents_historicalDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_openOrder4(_DTwsEvents_openOrder4EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_openOrder4(_DTwsEvents_openOrder4EventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_bondContractDetails(_DTwsEvents_bondContractDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_bondContractDetails(_DTwsEvents_bondContractDetailsEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_scannerParameters(_DTwsEvents_scannerParametersEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_scannerParameters(_DTwsEvents_scannerParametersEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_scannerData(_DTwsEvents_scannerDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_scannerData(_DTwsEvents_scannerDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_tickOptionComputation(_DTwsEvents_tickOptionComputationEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_tickOptionComputation(_DTwsEvents_tickOptionComputationEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_tickGeneric(_DTwsEvents_tickGenericEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_tickGeneric(_DTwsEvents_tickGenericEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_tickString(_DTwsEvents_tickStringEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_tickString(_DTwsEvents_tickStringEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_tickEFP(_DTwsEvents_tickEFPEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_tickEFP(_DTwsEvents_tickEFPEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_realtimeBar(_DTwsEvents_realtimeBarEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_realtimeBar(_DTwsEvents_realtimeBarEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_currentTime(_DTwsEvents_currentTimeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_currentTime(_DTwsEvents_currentTimeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_scannerDataEnd(_DTwsEvents_scannerDataEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_scannerDataEnd(_DTwsEvents_scannerDataEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_fundamentalData(_DTwsEvents_fundamentalDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_fundamentalData(_DTwsEvents_fundamentalDataEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_contractDetailsEnd(_DTwsEvents_contractDetailsEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_contractDetailsEnd(_DTwsEvents_contractDetailsEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_openOrderEnd(_DTwsEvents_openOrderEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_openOrderEnd(_DTwsEvents_openOrderEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_accountDownloadEnd(_DTwsEvents_accountDownloadEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_accountDownloadEnd(_DTwsEvents_accountDownloadEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_execDetailsEnd(_DTwsEvents_execDetailsEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_execDetailsEnd(_DTwsEvents_execDetailsEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_deltaNeutralValidation(_DTwsEvents_deltaNeutralValidationEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_deltaNeutralValidation(_DTwsEvents_deltaNeutralValidationEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_tickSnapshotEnd(_DTwsEvents_tickSnapshotEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_tickSnapshotEnd(_DTwsEvents_tickSnapshotEndEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_marketDataType(_DTwsEvents_marketDataTypeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_marketDataType(_DTwsEvents_marketDataTypeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_contractDetailsEx(_DTwsEvents_contractDetailsExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_contractDetailsEx(_DTwsEvents_contractDetailsExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_openOrderEx(_DTwsEvents_openOrderExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_openOrderEx(_DTwsEvents_openOrderExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_execDetailsEx(_DTwsEvents_execDetailsExEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TWSLib._DTwsEvents_tickPriceEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Double, Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_tickSizeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_connectionClosedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_openOrder1EventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_openOrder2EventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal), Int32, String(HasFieldMarshal), Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_updateAccountTimeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_updateAccountValueEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_nextValidIdEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_permIdEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_errMsgEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_updatePortfolioEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Double, Double, Double, Double, Double, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_orderStatusEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal), Int32, Int32, Double, Int32, Int32, Double, Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_contractDetailsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Double, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_execDetailsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Double, Int32, Int32, Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_updateMktDepthEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Int32, Int32, Double, Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_updateMktDepthL2EventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, String(HasFieldMarshal), Int32, Int32, Double, Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_updateNewsBulletinEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int16, Int16, String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_managedAccountsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_openOrder3EventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_receiveFAEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_historicalDataEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal), Double, Double, Double, Double, Int32, Int32, Double, Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_openOrder4EventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), Double, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32, Double, Int32, Int32, Double, Int32, Double, Double, Double, Double, Double, Int32, Int32, Int32, Int32, Double, Int32, Int32, Int32, Int32, String(HasFieldMarshal), Double, Int32, String(HasFieldMarshal), Double, Int32, Int32, Double, Double, Int32, String(HasFieldMarshal), Int32, Int32, Double): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_bondContractDetailsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_scannerParametersEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_scannerDataEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), Double, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_tickOptionComputationEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_tickGenericEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Double): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_tickStringEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_tickEFPEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Double, String(HasFieldMarshal), Double, Int32, String(HasFieldMarshal), Double, Double): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_realtimeBarEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Double, Double, Double, Double, Int32, Double, Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_currentTimeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_scannerDataEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_fundamentalDataEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_contractDetailsEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_openOrderEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_accountDownloadEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_execDetailsEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_deltaNeutralValidationEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, IUnderComp(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_tickSnapshotEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_marketDataTypeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_contractDetailsExEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, IContractDetails(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_openOrderExEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, IContract(HasFieldMarshal), IOrder(HasFieldMarshal), IOrderState(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_execDetailsExEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, IContract(HasFieldMarshal), IExecution(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_updatePortfolioExEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(IContract(HasFieldMarshal), Int32, Double, Double, Double, Double, Double, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_scannerDataExEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, IContractDetails(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_commissionReportEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(ICommissionReport(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_positionEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String(HasFieldMarshal), IContract(HasFieldMarshal), Int32, Double): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_positionEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_accountSummaryEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_accountSummaryEndEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_verifyMessageAPIEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_verifyCompletedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_displayGroupListEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class TWSLib._DTwsEvents_displayGroupUpdatedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual
+Interface TWSLib.Tws: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    TWSLib._DTws
+    TWSLib._DTwsEvents_Event
+Class TWSLib._DTwsEvents_SinkHelper: AutoLayout, AnsiClass, Class, Public, Sealed
+  Interfaces:
+    TWSLib._DTwsEvents
+  Fields:
+    TWSLib._DTwsEvents_tickPriceEventHandler m_tickPriceDelegate : Public
+    TWSLib._DTwsEvents_tickSizeEventHandler m_tickSizeDelegate : Public
+    TWSLib._DTwsEvents_connectionClosedEventHandler m_connectionClosedDelegate : Public
+    TWSLib._DTwsEvents_openOrder1EventHandler m_openOrder1Delegate : Public
+    TWSLib._DTwsEvents_openOrder2EventHandler m_openOrder2Delegate : Public
+    TWSLib._DTwsEvents_updateAccountTimeEventHandler m_updateAccountTimeDelegate : Public
+    TWSLib._DTwsEvents_updateAccountValueEventHandler m_updateAccountValueDelegate : Public
+    TWSLib._DTwsEvents_nextValidIdEventHandler m_nextValidIdDelegate : Public
+    TWSLib._DTwsEvents_permIdEventHandler m_permIdDelegate : Public
+    TWSLib._DTwsEvents_errMsgEventHandler m_errMsgDelegate : Public
+    TWSLib._DTwsEvents_updatePortfolioEventHandler m_updatePortfolioDelegate : Public
+    TWSLib._DTwsEvents_orderStatusEventHandler m_orderStatusDelegate : Public
+    TWSLib._DTwsEvents_contractDetailsEventHandler m_contractDetailsDelegate : Public
+    TWSLib._DTwsEvents_execDetailsEventHandler m_execDetailsDelegate : Public
+    TWSLib._DTwsEvents_updateMktDepthEventHandler m_updateMktDepthDelegate : Public
+    TWSLib._DTwsEvents_updateMktDepthL2EventHandler m_updateMktDepthL2Delegate : Public
+    TWSLib._DTwsEvents_updateNewsBulletinEventHandler m_updateNewsBulletinDelegate : Public
+    TWSLib._DTwsEvents_managedAccountsEventHandler m_managedAccountsDelegate : Public
+    TWSLib._DTwsEvents_openOrder3EventHandler m_openOrder3Delegate : Public
+    TWSLib._DTwsEvents_receiveFAEventHandler m_receiveFADelegate : Public
+    TWSLib._DTwsEvents_historicalDataEventHandler m_historicalDataDelegate : Public
+    TWSLib._DTwsEvents_openOrder4EventHandler m_openOrder4Delegate : Public
+    TWSLib._DTwsEvents_bondContractDetailsEventHandler m_bondContractDetailsDelegate : Public
+    TWSLib._DTwsEvents_scannerParametersEventHandler m_scannerParametersDelegate : Public
+    TWSLib._DTwsEvents_scannerDataEventHandler m_scannerDataDelegate : Public
+    TWSLib._DTwsEvents_tickOptionComputationEventHandler m_tickOptionComputationDelegate : Public
+    TWSLib._DTwsEvents_tickGenericEventHandler m_tickGenericDelegate : Public
+    TWSLib._DTwsEvents_tickStringEventHandler m_tickStringDelegate : Public
+    TWSLib._DTwsEvents_tickEFPEventHandler m_tickEFPDelegate : Public
+    TWSLib._DTwsEvents_realtimeBarEventHandler m_realtimeBarDelegate : Public
+    TWSLib._DTwsEvents_currentTimeEventHandler m_currentTimeDelegate : Public
+    TWSLib._DTwsEvents_scannerDataEndEventHandler m_scannerDataEndDelegate : Public
+    TWSLib._DTwsEvents_fundamentalDataEventHandler m_fundamentalDataDelegate : Public
+    TWSLib._DTwsEvents_contractDetailsEndEventHandler m_contractDetailsEndDelegate : Public
+    TWSLib._DTwsEvents_openOrderEndEventHandler m_openOrderEndDelegate : Public
+    TWSLib._DTwsEvents_accountDownloadEndEventHandler m_accountDownloadEndDelegate : Public
+    TWSLib._DTwsEvents_execDetailsEndEventHandler m_execDetailsEndDelegate : Public
+    TWSLib._DTwsEvents_deltaNeutralValidationEventHandler m_deltaNeutralValidationDelegate : Public
+    TWSLib._DTwsEvents_tickSnapshotEndEventHandler m_tickSnapshotEndDelegate : Public
+    TWSLib._DTwsEvents_marketDataTypeEventHandler m_marketDataTypeDelegate : Public
+    TWSLib._DTwsEvents_contractDetailsExEventHandler m_contractDetailsExDelegate : Public
+    TWSLib._DTwsEvents_openOrderExEventHandler m_openOrderExDelegate : Public
+    TWSLib._DTwsEvents_execDetailsExEventHandler m_execDetailsExDelegate : Public
+    TWSLib._DTwsEvents_updatePortfolioExEventHandler m_updatePortfolioExDelegate : Public
+    TWSLib._DTwsEvents_scannerDataExEventHandler m_scannerDataExDelegate : Public
+    TWSLib._DTwsEvents_commissionReportEventHandler m_commissionReportDelegate : Public
+    TWSLib._DTwsEvents_positionEventHandler m_positionDelegate : Public
+    TWSLib._DTwsEvents_positionEndEventHandler m_positionEndDelegate : Public
+    TWSLib._DTwsEvents_accountSummaryEventHandler m_accountSummaryDelegate : Public
+    TWSLib._DTwsEvents_accountSummaryEndEventHandler m_accountSummaryEndDelegate : Public
+    TWSLib._DTwsEvents_verifyMessageAPIEventHandler m_verifyMessageAPIDelegate : Public
+    TWSLib._DTwsEvents_verifyCompletedEventHandler m_verifyCompletedDelegate : Public
+    TWSLib._DTwsEvents_displayGroupListEventHandler m_displayGroupListDelegate : Public
+    TWSLib._DTwsEvents_displayGroupUpdatedEventHandler m_displayGroupUpdatedDelegate : Public
+    Int32 m_dwCookie : Public
+  Methods:
+    tickPrice(Int32, Int32, Double, Int32): PrivateScope, Public, Virtual
+    tickSize(Int32, Int32, Int32): PrivateScope, Public, Virtual
+    connectionClosed(): PrivateScope, Public, Virtual
+    openOrder1(Int32, String, String, String, Double, String, String, String, String): PrivateScope, Public, Virtual
+    openOrder2(Int32, String, Int32, String, Double, Double, String, String, String, String, Int32, String, Int32): PrivateScope, Public, Virtual
+    updateAccountTime(String): PrivateScope, Public, Virtual
+    updateAccountValue(String, String, String, String): PrivateScope, Public, Virtual
+    nextValidId(Int32): PrivateScope, Public, Virtual
+    permId(Int32, Int32): PrivateScope, Public, Virtual
+    errMsg(Int32, Int32, String): PrivateScope, Public, Virtual
+    updatePortfolio(String, String, String, Double, String, String, String, Int32, Double, Double, Double, Double, Double, String): PrivateScope, Public, Virtual
+    orderStatus(Int32, String, Int32, Int32, Double, Int32, Int32, Double, Int32, String): PrivateScope, Public, Virtual
+    contractDetails(String, String, String, Double, String, String, String, String, String, String, Int32, Double, Int32, String, String, String): PrivateScope, Public, Virtual
+    execDetails(Int32, String, String, String, Double, String, String, String, String, String, String, String, String, String, Int32, Double, Int32, Int32, Int32): PrivateScope, Public, Virtual
+    updateMktDepth(Int32, Int32, Int32, Int32, Double, Int32): PrivateScope, Public, Virtual
+    updateMktDepthL2(Int32, Int32, String, Int32, Int32, Double, Int32): PrivateScope, Public, Virtual
+    updateNewsBulletin(Int16, Int16, String, String): PrivateScope, Public, Virtual
+    managedAccounts(String): PrivateScope, Public, Virtual
+    openOrder3(Int32, String, String, String, Double, String, String, String, String, String, Int32, String, Double, Double, String, String, String, String, Int32, String, Int32, Int32, String, String, String, String, String, String, String): PrivateScope, Public, Virtual
+    receiveFA(Int32, String): PrivateScope, Public, Virtual
+    historicalData(Int32, String, Double, Double, Double, Double, Int32, Int32, Double, Int32): PrivateScope, Public, Virtual
+    openOrder4(Int32, String, String, String, Double, String, String, String, String, String, Int32, String, Double, Double, String, String, String, String, Int32, String, Int32, Int32, String, String, String, String, String, String, String, Int32, String, String, Int32, Int32, Double, Int32, Int32, Double, Int32, Double, Double, Double, Double, Double, Int32, Int32, Int32, Int32, Double, Int32, Int32, Int32, Int32, String, Double, Int32, String, Double, Int32, Int32, Double, Double, Int32, String, Int32, Int32, Double): PrivateScope, Public, Virtual
+    bondContractDetails(String, String, String, Double, String, String, String, String, String, Int32, Int32, Int32, String, String, String, String, String, Int32, Double, String, String, String, String, Int32, String): PrivateScope, Public, Virtual
+    scannerParameters(String): PrivateScope, Public, Virtual
+    scannerData(Int32, Int32, String, String, String, Double, String, String, String, String, String, String, String, String, String, String): PrivateScope, Public, Virtual
+    tickOptionComputation(Int32, Int32, Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, Virtual
+    tickGeneric(Int32, Int32, Double): PrivateScope, Public, Virtual
+    tickString(Int32, Int32, String): PrivateScope, Public, Virtual
+    tickEFP(Int32, Int32, Double, String, Double, Int32, String, Double, Double): PrivateScope, Public, Virtual
+    realtimeBar(Int32, Int32, Double, Double, Double, Double, Int32, Double, Int32): PrivateScope, Public, Virtual
+    currentTime(Int32): PrivateScope, Public, Virtual
+    scannerDataEnd(Int32): PrivateScope, Public, Virtual
+    fundamentalData(Int32, String): PrivateScope, Public, Virtual
+    contractDetailsEnd(Int32): PrivateScope, Public, Virtual
+    openOrderEnd(): PrivateScope, Public, Virtual
+    accountDownloadEnd(String): PrivateScope, Public, Virtual
+    execDetailsEnd(Int32): PrivateScope, Public, Virtual
+    deltaNeutralValidation(Int32, IUnderComp): PrivateScope, Public, Virtual
+    tickSnapshotEnd(Int32): PrivateScope, Public, Virtual
+    marketDataType(Int32, Int32): PrivateScope, Public, Virtual
+    contractDetailsEx(Int32, IContractDetails): PrivateScope, Public, Virtual
+    openOrderEx(Int32, IContract, IOrder, IOrderState): PrivateScope, Public, Virtual
+    execDetailsEx(Int32, IContract, IExecution): PrivateScope, Public, Virtual
+    updatePortfolioEx(IContract, Int32, Double, Double, Double, Double, Double, String): PrivateScope, Public, Virtual
+    scannerDataEx(Int32, Int32, IContractDetails, String, String, String, String): PrivateScope, Public, Virtual
+    commissionReport(ICommissionReport): PrivateScope, Public, Virtual
+    position(String, IContract, Int32, Double): PrivateScope, Public, Virtual
+    positionEnd(): PrivateScope, Public, Virtual
+    accountSummary(Int32, String, String, String, String): PrivateScope, Public, Virtual
+    accountSummaryEnd(Int32): PrivateScope, Public, Virtual
+    verifyMessageAPI(String): PrivateScope, Public, Virtual
+    verifyCompleted(Int32, String): PrivateScope, Public, Virtual
+    displayGroupList(Int32, String): PrivateScope, Public, Virtual
+    displayGroupUpdated(Int32, String): PrivateScope, Public, Virtual
