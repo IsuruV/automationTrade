@@ -21,10 +21,10 @@ HighFrequencyTrading.vcxproj.filters
     "Source Files" filter).
 
 HighFrequencyTrading.cpp
-    This is the main application source file.
     Contains the code to display the form.
 
 Form1.h
+     This is the main application source file.
     Contains the implementation of your form class and InitializeComponent() function.
 
 AssemblyInfo.cpp
