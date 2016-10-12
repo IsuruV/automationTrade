@@ -1,11 +1,11 @@
 ========================================================================
-    APPLICATION : HighFrequencyTrading Project Overview
+    APPLICATION : High Frequency Trading Project Overview
 ========================================================================
+         2 module application that made automated stock trades based on technical indicators.
 
-AppWizard has created this HighFrequencyTrading Application for you.  
+    -	First module: Moving average cross trade.
+    -   Second module: Automated market bid and ask.
 
-This file contains a summary of what you will find in each of the files that
-make up your HighFrequencyTrading application.
 
 HighFrequencyTrading.vcxproj
     This is the main project file for VC++ projects generated using an Application Wizard. 
